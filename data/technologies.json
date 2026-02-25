@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Kotlin",
+    "icon": "/icons/technologies/kotlin.png",
+    "category": "Language"
+  },
+  {
+    "name": "Compose",
+    "icon": "/icons/technologies/compose.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Koin",
+    "icon": "/icons/technologies/koin.png",
+    "category": "Library"
+  },
+  {
+    "name": "Ktor",
+    "icon": "/icons/technologies/ktor.png",
+    "category": "Library"
+  },
+  {
+    "name": "Git",
+    "icon": "/icons/technologies/git.png",
+    "category": "Tool"
+  },
+  {
+    "name": "Github",
+    "icon": "/icons/technologies/github.png",
+    "category": "Platform"
+  },
+  {
+    "name": "Github Actions",
+    "icon": "/icons/technologies/github.png",
+    "category": "CI/CD"
+  },
+  {
+    "name": "Jira",
+    "icon": "/icons/technologies/jira.svg",
+    "category": "Tool"
+  },
+  {
+    "name": "Kubernetes",
+    "icon": "/icons/technologies/kubernetes.png",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "VueJS",
+    "icon": "/icons/technologies/vuejs.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Tzatziki",
+    "icon": "/icons/companies/decathlon.png",
+    "category": "Testing"
+  },
+  {
+    "name": "Flutter",
+    "icon": "/icons/technologies/flutter.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Dart",
+    "icon": "/icons/technologies/dart.png",
+    "category": "Language"
+  },
+  {
+    "name": "Firebase",
+    "icon": "/icons/technologies/firebase.png",
+    "category": "Platform"
+  },
+  {
+    "name": "Guerkin",
+    "icon": "/icons/technologies/guerkin.png",
+    "category": "Testing"
+  },
+  {
+    "name": "Bitrise",
+    "icon": "/icons/technologies/bitrise.png",
+    "category": "CI/CD"
+  },
+  {
+    "name": "WPF",
+    "icon": "/icons/technologies/wpf.png",
+    "category": "Framework"
+  },
+  {
+    "name": ".NET Core",
+    "icon": "/icons/technologies/dotnet.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Oracle",
+    "icon": "/icons/technologies/oracle.png",
+    "category": "Database"
+  },
+  {
+    "name": "Angular",
+    "icon": "/icons/technologies/angular.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Material UI",
+    "icon": "/icons/technologies/material-ui.jpg",
+    "category": "UI Library"
+  },
+  {
+    "name": "ExpressJS",
+    "icon": "/icons/technologies/express-js.webp",
+    "category": "Framework"
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/icons/technologies/postgres.png",
+    "category": "Database"
+  },
+  {
+    "name": "Docker",
+    "icon": "/icons/technologies/docker.png",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Docker-Compose",
+    "icon": "/icons/technologies/docker.png",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Node.js",
+    "icon": "/icons/technologies/nodejs.png",
+    "category": "Runtime"
+  },
+  {
+    "name": "RabbitMQ",
+    "icon": "/icons/technologies/rabbitmq.png",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Kafka",
+    "icon": "/icons/technologies/kafka.png",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Redis",
+    "icon": "/icons/technologies/redis.png",
+    "category": "Database"
+  },
+  {
+    "name": "Plant UML",
+    "icon": "/icons/technologies/plantuml.webp",
+    "category": "Tool"
+  },
+  {
+    "name": "Android (Java)",
+    "icon": "/icons/technologies/android.png",
+    "category": "Platform"
+  },
+  {
+    "name": "Gitlab CI",
+    "icon": "/icons/technologies/gitlab.png",
+    "category": "CI/CD"
+  },
+  {
+    "name": "Google Cloud Platform",
+    "icon": "/icons/technologies/google-cloud.png",
+    "category": "Cloud"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "/icons/technologies/mongodb.png",
+    "category": "Database"
+  },
+  {
+    "name": "Cloud Firestore",
+    "icon": "/icons/technologies/firestore.png",
+    "category": "Database"
+  },
+  {
+    "name": "Stripe",
+    "icon": "/icons/technologies/stripe.png",
+    "category": "Payment"
+  },
+  {
+    "name": "Python",
+    "icon": "/icons/technologies/python.png",
+    "category": "Language"
+  },
+  {
+    "name": "Django",
+    "icon": "/icons/technologies/django.png",
+    "category": "Framework"
+  },
+  {
+    "name": "HTML",
+    "icon": "/icons/technologies/html.png",
+    "category": "Language"
+  },
+  {
+    "name": "CSS",
+    "icon": "/icons/technologies/css.png",
+    "category": "Language"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "/icons/technologies/js.png",
+    "category": "Language"
+  },
+  {
+    "name": "Figma",
+    "icon": "/icons/technologies/figma.png",
+    "category": "Design"
+  },
+  {
+    "name": "React",
+    "icon": "/icons/technologies/react.png",
+    "category": "Framework"
+  },
+  {
+    "name": "Azure",
+    "icon": "/icons/technologies/azure.png",
+    "category": "Cloud"
+  },
+  {
+    "name": "Docusaurus",
+    "icon": "/icons/technologies/docusaurus.svg",
+    "category": "Framework"
+  }
+]

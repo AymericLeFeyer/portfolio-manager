@@ -1,0 +1,957 @@
+{
+  "name": "Aymeric Le Feyer",
+  "role": "Software Engineer - Mobile Enthousiast",
+  "contacts": {
+    "email": "lefeyer.aymeric@gmail.com",
+    "phone": "+33 6 52 88 11 55",
+    "linkedin": "https://www.linkedin.com/in/AymericLeFeyer/",
+    "github": "AymericLeFeyer"
+  },
+  "companies": [
+    {
+      "company": "AyLabs",
+      "position": "Créateur de contenu",
+      "start_date": "2024-06",
+      "end_date": "Present",
+      "row": 1,
+      "responsibilities": [
+        "Création de contenu autour de la domotique, l'impression 3D et les homelabs",
+        "Ecriture, tournage et montage de vidéos YouTube",
+        "Gestion des réseaux sociaux",
+        "Création de miniatures et de visuels"
+      ]
+    },
+    {
+      "company": "Lesieur",
+      "position": "Agent de surveillance",
+      "start_date": "2018-07",
+      "end_date": "2018-07",
+      "row": 2,
+      "responsibilities": [
+        "Surveillance de machines à la station d'épuration",
+        "Analyse des eaux"
+      ]
+    },
+    {
+      "company": "Dunfresh",
+      "position": "Manutentionnaire entrepôt",
+      "start_date": "2019-06",
+      "end_date": "2019-08",
+      "row": 2,
+      "responsibilities": ["Manutentionnaire CACES 1-3-5"]
+    },
+    {
+      "company": "Freelance",
+      "position": "Développeur fullstack freelance",
+      "start_date": "2021-07",
+      "end_date": "2023-07",
+      "row": 1,
+      "responsibilities": ["Développement d'une application mobile"]
+    },
+    {
+      "company": "Pit",
+      "position": "Développeur android stagiaire",
+      "start_date": "2020-06",
+      "end_date": "2020-08",
+      "row": 2,
+      "responsibilities": ["Développement d'une application mobile"]
+    },
+    {
+      "company": "Pit",
+      "position": "Développeur full-stack en alternance",
+      "start_date": "2020-09",
+      "end_date": "2022-09",
+      "row": 2,
+      "responsibilities": [
+        "Réalisation de différents logiciels sur des technologies variées en fonction du besoin client"
+      ]
+    },
+    {
+      "company": "Pit",
+      "position": "Consultant en informatique",
+      "start_date": "2022-09",
+      "end_date": "Present",
+      "row": 2,
+      "responsibilities": [
+        "Conseil informatique",
+        "Développement de logiciels sur mesure",
+        "Membre du cercle des CTO's",
+        "Tuteur à deux reprises pour des alternants",
+        "Organisateur de meetups techniques internes et externes",
+        "Speaker occasionnel lors de meetups techniques"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Université de Lille",
+      "degree": "Master en Informatique, spécialité E-Services",
+      "start_date": "2020-09",
+      "end_date": "2022-06",
+      "icon": "/icons/companies/univ-lille.png"
+    },
+    {
+      "institution": "Université Polytechnique Hauts-de-France",
+      "degree": "Licence en Informatique",
+      "start_date": "2017-09",
+      "end_date": "2020-06",
+      "icon": "/icons/companies/uphf.png"
+    },
+    {
+      "institution": "Coaching personnel",
+      "degree": "Kotlin / Compose",
+      "start_date": "2024-06",
+      "end_date": "2024-09",
+      "icon": "/icons/technologies/kotlin.png"
+    },
+    {
+      "institution": "Formation",
+      "degree": "Eco-conception",
+      "start_date": "2023-03",
+      "end_date": "2023-03",
+      "icon": "/icons/technologies/leaf.png"
+    },
+    {
+      "institution": "Formation",
+      "degree": "Prise de parole en public",
+      "start_date": "2024-01",
+      "end_date": "2024-01",
+      "icon": "/icons/technologies/speak.png"
+    },
+    {
+      "institution": "Formation",
+      "degree": "Jenkins",
+      "start_date": "2024-03",
+      "end_date": "2024-03",
+      "icon": "/icons/technologies/jenkins.png"
+    },
+    {
+      "institution": "Formation",
+      "degree": "Kubernetes",
+      "start_date": "2022-09",
+      "end_date": "2022-09",
+      "icon": "/icons/technologies/kubernetes.png"
+    }
+   
+  ],
+  "missions": [
+    {
+      "title": "Time Life",
+      "context": "J'ai vibe codé le site sur lequel vous êtes en une soirée avec Bolt et Copilot. J'aime pas spécialement faire ça, mais c'est plus rapide.",
+      "company": "AyLabs",
+      "start_date": "2026-01",
+      "end_date": "2026-01",
+      "row": 1,
+      "link": {
+         "url": "https://timelife.aymeric.lefeyer.fr/",
+         "text": "Site web" 
+      },
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "Le peu que j'ai écrit, c'était du React. Sinon Bolt génère du React"
+        }
+      ],
+      "tasks": [
+        "Plein de prompts",
+        "Déploiement du site"
+      ],
+      "is_side_project": true
+    },
+    {
+      "title": "aylabs.fr",
+      "context": "J'ai créé le site web aylabs.fr rapidement afin d'avoir un endroit pour référencier mes vidéos, mes articles et les produits que je teste. Un script n8n est joué tous les jours afin de récupérer certaines statistiques",
+      "company": "AyLabs",
+      "start_date": "2025-08",
+      "end_date": "2025-08",
+      "link": {
+         "url": "https://www.aylabs.fr/",
+         "text": "Site web" 
+      },
+      "row": 1,
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "Base de code avec Bolt, ensuite code pour arriver à la forme finale du site"
+        }
+      ],
+      "tasks": [
+        "Quelques prompts pour démarrer",
+        "Développement de quelques fonctionnalitées manquantes",
+        "Déploiement du site"
+      ],
+      "is_side_project": true
+    },
+    {
+      "title": "AyLabs Docs",
+      "context": "AyLabs Docs, un site que j'ai créé afin de rassembler les tutos et explications pour aider les gens à débuter dans la domotique",
+      "company": "AyLabs",
+      "start_date": "2025-12",
+      "end_date": "2025-12",
+      "link": {
+         "url": "https://www.docs.aylabs.fr/",
+         "text": "Site web" 
+      },
+      "row": 1,
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "Le peu que j'ai écrit, c'était du React. Sinon Bolt génère du React"
+        },
+        {
+          "name": "Docusaurus",
+          "frequency": 1,
+          "comments": "Un outil très sympa pour créer des documentations"
+        }
+      ],
+      "tasks": [
+        "Rédaction de documentations",
+        "Déploiement du site"
+      ],
+      "is_side_project": true
+    },
+    {
+      "title": "Développeur d'application mobile Kotlin",
+      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. La seconde partie de ma mission consiste à la migration de Flutter vers Kotlin / Compose.",
+      "company": "Decathlon",
+      "start_date": "2024-05",
+      "end_date": "Present",
+      "row": 2,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Kotlin",
+          "frequency": 1,
+          "comments": "Le language principal pour le développement de l'application mobile."
+        },
+        {
+          "name": "Compose",
+          "frequency": 1,
+          "comments": "Le framework UI utilisé pour construire l'interface utilisateur de l'application."
+        },
+        {
+          "name": "Koin",
+          "frequency": 1,
+          "comments": "Utilisé pour la gestion de l'injection de dépendances dans l'application."
+        },
+        {
+          "name": "Ktor",
+          "frequency": 1,
+          "comments": "Utilisé pour les communications réseau et les appels API."
+        },
+        {
+          "name": "Git",
+          "frequency": 1,
+          "comments": "Utilisé pour le contrôle de version et la collaboration avec l'équipe."
+        },
+        {
+          "name": "Github",
+          "frequency": 1,
+          "comments": "Plateforme utilisée pour l'hébergement du code source et la gestion des pull requests."
+        },
+        {
+          "name": "Github Actions",
+          "frequency": 1,
+          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile."
+        },
+        {
+          "name": "Jira",
+          "frequency": 0.5,
+          "comments": "Utilisé pour la gestion des tâches et le suivi des bugs."
+        },
+        {
+          "name": "Kubernetes",
+          "frequency": 0.1,
+          "comments": "Utilisé pour le déploiement et la gestion des services backend, pour donner un coup de main à l'équipe backend et agir en cas d'incident"
+        },
+        {
+          "name": "VueJS",
+          "frequency": 0.1,
+          "comments": "Fonctionnalités ou correctifs sur l'application web de paramétrage de notre application"
+        },
+        {
+          "name": "Tzatziki",
+          "frequency": 0.1,
+          "comments": "Utilisé pour les tests d'intégration end-to-end de l'application mobile."
+        }
+      ],
+      "tasks": [
+        "Migration de toute l’application en Kotlin avec Compose, koin et ktor",
+        "Conception de nouveaux écrans et intégration UI/UX",
+        "Mise en place de l’architecture technique",
+        "Participation au roulement de l'astreinte backend pour réparer le produit en cas d'incident",
+        "Intégration d'évènements anayltics personnalisés pour Amplitude / Google Analytics",
+        "Validation auprès des pairs",
+        "Chiffrage / estimation de features",
+        "Veille technologique sur le monde Android",
+        "Documentation, et formations envers mes collègues",
+        "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code",
+        "Présentation de fonctionnalités lors de démos aux parties prenantes"
+      ]
+    },
+    {
+      "title": "Développeur d'application mobile Flutter",
+      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store', application android native. Chaque module de cette application 'all-in-one' est gérée par une équipe.",
+      "company": "Decathlon",
+      "start_date": "2022-06",
+      "end_date": "2024-05",
+      "row": 2,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Le framework principal pour le développement de l'application mobile."
+        },
+        {
+          "name": "Dart",
+          "frequency": 1,
+          "comments": "Le language utilisé pour développer l'application mobile."
+        },
+        {
+          "name": "Firebase",
+          "frequency": 0.5,
+          "comments": "Crashlytics et Remote config pour la gestion des crashs et la configuration à distance."
+        },
+        {
+          "name": "Git",
+          "frequency": 1,
+          "comments": "Utilisé pour le contrôle de version et la collaboration avec l'équipe."
+        },
+        {
+          "name": "Github",
+          "frequency": 1,
+          "comments": "Plateforme utilisée pour l'hébergement du code source et la gestion des pull requests."
+        },
+        {
+          "name": "Jira",
+          "frequency": 0.5,
+          "comments": "Utilisé pour la gestion des tâches et le suivi des bugs."
+        },
+        {
+          "name": "Guerkin",
+          "frequency": 0.1,
+          "comments": "Utilisé pour écrire des tests d'acceptation afin de garantir que les fonctionnalités répondent aux exigences métier."
+        },
+        {
+          "name": "Bitrise",
+          "frequency": 0.5,
+          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile."
+        },
+        {
+          "name": "VueJS",
+          "frequency": 0.1,
+          "comments": "Fonctionnalités ou correctifs sur l'application web de paramétrage de notre application"
+        }
+      ],
+      "tasks": [
+        "Mise en place de Firebase (Remote Config, Analytics, Crashlytics)",
+        "Amélioration de la qualité du produit avec des tests unitaires et des tests d'intégration",
+        "Refonte graphique pour s’adapter au design system “Vitamin”",
+        "Recherche UI/UX et intégration",
+        "Amélioration du workflow de déploiement Bitrise",
+        "Développement de nombreuses fonctionnalités (écran de maintenance, bandeaux d’informations, mise à jour automatique, etc.)"
+      ]
+    },
+    {
+      "title": "Consultant d'application mobile Flutter",
+      "context": "Lors d'un projet de refonte de l'application mobile commerciale Le Fourgon, je suis intervenu afin d'aider l'équipe à migrer d'un environnement Ionic vers Flutter. Mon rôle principal était de former l'équipe et de l'aider à constuire un code solide et rempli de bonnes pratiques.",
+      "company": "Le Fourgon",
+      "start_date": "2023-11",
+      "end_date": "2024-02",
+      "row": 1,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Le framework principal pour le développement de l'application mobile."
+        },
+        {
+          "name": "Dart",
+          "frequency": 1,
+          "comments": "Le language utilisé pour développer l'application mobile."
+        }
+      ],
+      "tasks": [
+        "Formation à l'équipe des bonnes pratiques Flutter",
+        "Formation à Riverpod pour la gestion d'état",
+        "Aide à la mise en place de l'architecture technique Clean Code",
+        "Revue de code et validation auprès des pairs"
+      ]
+    },
+    {
+      "title": "Consultant d'application mobile Flutter",
+      "context": "Audit technique pour une application mobile développée par un centre de recherche. L'objectif était d'identifier les points d'amélioration et de proposer des solutions pour optimiser les performances et la maintenabilité de l'application.",
+      "company": "Park on Time",
+      "start_date": "2023-10",
+      "end_date": "2023-10",
+      "row": 1,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Le framework principal pour le développement de l'application mobile."
+        },
+        {
+          "name": "Dart",
+          "frequency": 1,
+          "comments": "Le language utilisé pour développer l'application mobile."
+        }
+      ],
+      "is_side_project": false,
+      "tasks": [
+        "Audit technique de l'application mobile",
+        "Identification des points d'amélioration",
+        "Proposition de solutions pour optimiser les performances et la maintenabilité"
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "Factory est un outil réalisé en interne permettant de générer des formulaires. L'objectif de ce projet est de migrer de nombreuses applications écrites en DOS et Basic, ne pouvant plus être maintenues aujourd'hui. Ma mission est principalement d'améliorer le produit, et de l'utiliser pour migrer de nouvelles applications.",
+      "company": "Paragon",
+      "start_date": "2022-02",
+      "end_date": "2022-06",
+      "is_side_project": false,
+      "row": 2,
+      "technologies": [
+        {
+          "name": "WPF",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'interface utilisateur de l'application desktop."
+        },
+        {
+          "name": ".NET Core",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de la logique métier de l'application desktop."
+        },
+        {
+          "name": "Oracle",
+          "frequency": 1,
+          "comments": "Utilisé comme base de données principale pour stocker les données de l'application."
+        }
+      ],
+      "tasks": [
+        "Intégration d’une base de compostage interne pour assurer le suivi des saisies des lots ",
+        "Utilisation du logiciel pour ajouter de nouvelles migrations",
+        "Optimisation et correction de bugs"
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "Cephee est un portail permettant de connaître l'éligibilité internet d'un lieu grâce aux informations fournies par les fournisseurs d'accès internet. Il est possible de consulter les différentes offres proposées. ",
+      "company": "Pit",
+      "start_date": "2021-12",
+      "end_date": "2022-01",
+      "is_side_project": false,
+      "row": 2,
+      "technologies": [
+        {
+          "name": "Angular",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'interface utilisateur de l'application web."
+        },
+        {
+          "name": "Material UI",
+          "frequency": 1,
+          "comments": "Framework graphique utilisé pour construire l'interface utilisateur de l'application web."
+        },
+        {
+          "name": "ExpressJS",
+          "frequency": 1,
+          "comments": "Utilisé comme serveur backend pour gérer les requêtes et la logique métier de l'application web."
+        },
+        {
+          "name": "PostgreSQL",
+          "frequency": 0.5,
+          "comments": "Utilisé comme base de données principale pour stocker les données de l'application."
+        }
+      
+      ],
+      "tasks": [
+        "Création de pages et composants Angular pour afficher les informations d'éligibilité et les offres internet",
+        "Développement d'API REST avec ExpressJS pour gérer les requêtes liées à l'éligibilité et aux offres",
+        "Mise en place de l’import-export des offres et des tarifs de ventes au format Excel ",
+        "Mise en place d’un historique des différentes actions d’import-export effectuées par les utilisateurs",
+        "Réalisation de scripts de migration pour mettre à jour le modèle de données "
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "Check At Me est un outil développé pour un client de Pit. Il s'agit d'une solution de monitoring complète qui détecte les pannes de services et prévient des prochaines expirations de certificats SSL. Il permet également de monitorer d'autres types de capteurs. L'outil est en pleine expansion.",
+      "company": "Pit",
+      "start_date": "2021-10",
+      "end_date": "2021-11",
+      "is_side_project": false,
+      "row": 2,
+      "technologies": [
+        {
+          "name": "Docker",
+          "frequency": 1,
+          "comments": "Utilisé pour containeriser les différents services de l'application."
+        },
+        {
+          "name": "Docker-Compose",
+          "frequency": 1,
+          "comments": "Utilisé pour orchestrer les conteneurs Docker et gérer les dépendances entre les services."
+        },
+        {
+          "name": "Node.js",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement des services backend de l'application."
+        },
+        {
+          "name": "RabbitMQ",
+          "frequency": 0.5,
+          "comments": "Utilisé comme système de messagerie pour la communication entre les différents services."
+        },
+        {
+          "name": "Kafka",
+          "frequency": 0.5,
+          "comments": "Utilisé pour le traitement en temps réel des flux de données."
+        },
+        {
+          "name": "Redis",
+          "frequency": 0.5,
+          "comments": "Utilisé comme base de données en mémoire pour le stockage temporaire des données."
+        }
+      ],
+      "tasks": [
+        "Découverte et intégration de RabbitMQ pour la communication entre les micro services et la gestion des flux de données",
+        "Mise en place d’un serveur rTail permettant de suivre les logs de différents containers docker ",
+        "Mise en place du module pkg permettant de packager le code d’un micro-service avant de le déployer sur un container",
+        "Création d’un module d’authentification pour sécuriser les appels entre les micro-services ",
+        "Mise en place d’un micro-service Kafka afin de pouvoir changer de solution de message queuing selon le besoin ",
+        "Réalisation d’un meetup sur le Message Queuing au reste de l’équipe",
+        "Casquette de proxy chef de projet technique "
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "TalentPlug est un multi-diffuseur d'offres d'emploi. TalentPlug donne la possibilité à ses clients de se connecter à des solutions de gestion de ressources humaines. Le but de la mission est d'ajouter à cette liste la solution Cornerstone. L'objectif est donc de réaliser un connecteur pour rendre ces deux solutions compatibles.",
+      "company": "TalentPlug",
+      "start_date": "2021-07",
+      "end_date": "2021-08",
+      "is_side_project": false,
+      "row": 2,
+      "technologies": [
+        {
+          "name": ".NET Core",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de la logique métier de l'application backend."
+        },
+        {
+          "name": "Docker",
+          "frequency": 1,
+          "comments": "Utilisé pour containeriser les différents services de l'application."
+        },
+        {
+          "name": "Plant UML",
+          "frequency": 0.5,
+          "comments": "Utilisé pour documenter l'architecture de l'application."
+        }
+      ],
+      "tasks": [
+        "Analyse et conception",
+        "Réalisation de diagrammes de classes et de séquences",
+        "Développement du connecteur ",
+        "Création de l’image Docker prête au déploiement dans un swarm",
+        "Réalisation de tests unitaires ",
+        "Écriture des documentations technique et fonctionnelle",
+        "Animation de réunions de suivi avec le client"
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "familyBOOK est une solution de communication permettant de mettre en relation les différents membres d'une famille. Dans ce contexte, j'ai assuré le développement de diverses fonctionnalités autant sur les parties front (mobile, web), que sur la partie back",
+      "company": "Pit",
+      "start_date": "2020-06",
+      "end_date": "2021-06",
+      "row": 2,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Android (Java)",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application mobile Android."
+        },
+        {
+          "name": "Node.js",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de la logique métier de l'application backend."
+        },
+        {
+          "name": "VueJS",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application web."
+        },
+        {
+          "name": "Gitlab CI",
+          "frequency": 1,
+          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile et web."
+        },
+        {
+          "name": "Google Cloud Platform",
+          "frequency": 0.1,
+          "comments": "Utilisé pour l'hébergement de l'application backend et la gestion des bases de données."
+        },
+        {
+          "name": "MongoDB",
+          "frequency": 0.5,
+          "comments": "Utilisé comme base de données principale pour stocker les données de l'application."
+        },
+        {
+          "name": "Docker",
+          "frequency": 0.5,
+          "comments": "Utilisé pour containeriser les différents services de l'application."
+        }
+      ],
+      "tasks": [
+        "Conception technique : architecture applicative, modèle de données",
+        "Rédaction des documentations techniques",
+        "Développement du frontend : application mobile, interface web de gestion. ",
+        "Développement du backend : APIs, couches métier",
+        "Tests unitaires",
+        "Intégration des maquettes UX/UI",
+        "CI/CD",
+        "Scrum Master au sein de la Dev Team",
+        "Présentation du projet auprès des utilisateurs finaux en maison de retraite"
+      ]
+    },
+    {
+      "title": "Développeur fullstack",
+      "context": "Il s'agit d'un produit permettant de mettre en relation des supporters afin de faciliter le covoiturage vers les stades. J'interviens dans le développement de l'application.",
+      "company": "Baggou",
+      "start_date": "2021-02",
+      "end_date": "2021-08",
+      "row": 1,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application mobile."
+        },
+        {
+          "name": "ExpressJS",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de la logique métier de l'application backend."
+        },
+        {
+          "name": "Firebase",
+          "frequency": 0.5,
+          "comments": "Utilisé pour l'authentification et les notifications push."
+        },
+        {
+          "name": "Cloud Firestore",
+          "frequency": 0.5,
+          "comments": "Utilisé comme base de données principale pour stocker les données de l'application."
+        },
+        {
+          "name": "Stripe",
+          "frequency": 0.5,
+          "comments": "Utilisé pour la gestion des paiements au sein de l'application."
+        }
+      ],
+      "tasks": [
+        "Développement des fonctionnalités ",
+        "Création des projets front, mobile et back",
+        "Conception et documentation ",
+        "Mise en place de scripts d’intégration",
+        "CI/CD ",
+        "Intégration des maquettes",
+        "Chiffrage du besoin",
+        "Réalisation de POC ",
+        "Développement d’un site vitrine "
+      ]
+    },
+    {
+      "title": "Développeur Python",
+      "context": "Dunfresh est un entrepôt sous douane qui gère des conteneurs de fruits exotiques, principalement des bananes. J'ai développé une application pour aider à préparer les conteneurs de la semaine suivante. Avant, cette préparation prenait 3 heures par semaine ; maintenant, seulement 20 minutes avec tous les contrôles.",
+      "company": "Dunfresh",
+      "start_date": "2019-09",
+      "end_date": "2019-09",
+      "row": 1,
+      "technologies": [
+        {
+          "name": "Python",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application de préparation des conteneurs."
+        }
+      ],
+      "is_side_project": false,
+      "tasks": [
+        "Développement de ce logiciel permettant d'automatiser la préparation des conteneurs"
+      ]
+    },
+    {
+      "title": "Développeur Django",
+      "context": "Dunfresh est un entrepôt sous douane qui gère des conteneurs de fruits exotiques, surtout des bananes. J'ai développé une application web pour afficher en temps réel les informations des conteneurs et éviter l'impression papier. Faute de ressources, le projet n'a finalement pas été mis en production.",
+      "company": "Dunfresh",
+      "start_date": "2020-01",
+      "end_date": "2020-04",
+      "row": 1,
+      "technologies": [
+        {
+          "name": "Python",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application de préparation des conteneurs."
+        },
+        {
+          "name": "Django",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application de préparation des conteneurs."
+        }
+      ],
+      "tasks": [
+        "Développement de ce logiciel web permettant d'afficher en temps réel les informations des conteneurs"
+      ],
+      "is_side_project": false
+    },
+    {
+      "title": "habidom.fr",
+      "context": "Habidom est une entreprise du nord de la France spécialisée dans l'alarme, la domotique et la vidéosurveillance. J'ai créé un site web pour présenter l'entreprise, ses services, l'équipe et une FAQ. Un formulaire permet aux visiteurs d'entrer en contact avec Habidom.",
+      "company": "Habidom",
+      "start_date": "2020-07",
+      "end_date": "2020-07",
+      "link": {
+         "url": "https://www.habidom.fr/",
+         "text": "Site web" 
+      },
+      "row": 1,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "HTML",
+          "frequency": 1,
+          "comments": "Utilisé pour structurer le contenu du site web."
+        },
+        {
+          "name": "CSS",
+          "frequency": 1,
+          "comments": "Utilisé pour styliser le contenu du site web."
+        },
+        {
+          "name": "JavaScript",
+          "frequency": 0.5,
+          "comments": "Utilisé pour ajouter des fonctionnalités interactives au site web."
+        }
+      ],
+      "tasks": [
+        "Conception de maquettes",
+        "Développement du site web",
+        "Hébergement du site web et configuration du nom de domaine"
+      ]
+    },
+    {
+      "title": "Développeur Flutter",
+      "context": "Neo est un service permettant aux coachs de gérer leurs rendez-vous avec leurs clients (devenu Candoo). J'ai réalisé une application mobile pour consulter les rendez-vous sur téléphone. Ce POC a aidé l'équipe à identifier les difficultés liées au développement mobile.",
+      "company": "Neo",
+      "start_date": "2021-08",
+      "end_date": "2021-08",
+      "link": {
+         "url": "https://www.candoo.fr/",
+         "text": "Landing page" 
+      },
+      "row": 1,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application mobile."
+        },
+        {
+          "name": "Figma",
+          "frequency": 0.8,
+          "comments": "Utilisé pour la conception des maquettes de l'application mobile."
+        }
+      ],
+      "tasks": [
+        "Intégration et développement de l'application mobile",
+        "Réalisation de POC pour valider la faisabilité du projet",
+        "Conception et challenge des maquettes"
+      ]
+    },
+    {
+      "title": "Développeur Flutter",
+      "context": "Bonap est un projet de fin d'études visant à développer une idée de A à Z, sans contrainte technologique. Nous avons créé une application mobile de gestion de menus et de repas, avec une liste de courses intelligente par semaine. Bonap vient de « Bon Appétit ». Le projet a obtenu la note de 18/20 et faisait partie des meilleurs de la promotion.",
+      "company": "Bonap",
+      "start_date": "2019-09",
+      "end_date": "2020-05",
+      "is_side_project": true,
+      "link": {
+         "url": "https://stelapix.github.io/BonapWeb/",
+         "text": "Landing page" 
+      },
+      "row": 2,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement de l'application mobile."
+        },
+        {
+          "name": "Firebase",
+          "frequency": 0.8,
+          "comments": "Utilisé pour la base de données Firestore et l'authentification."
+        },
+        {
+          "name": "React",
+          "frequency": 0.1,
+          "comments": "Utilisé pour le site vitrine"
+        }
+      ],
+      "tasks": [
+        "Apprentissage de Flutter et développement de l'application mobile",
+        "Déploiement sur le Google Play Store",
+        "Création du logo et participation au design de l'application",
+        "Développement du site vitrine avec React",
+        "Mise en place de Firebase, des liens avec l'application"
+      ]
+    },
+    {
+      "title": "Développeur Fullstack",
+      "context": "Ocee est un projet de fin d'études visant à développer une idée de A à Z, sans contrainte technologique. Nous avons créé une application web pour permettre aux entreprises de suivre l'avancement de leurs projets en un instant. Ocee signifie « Où Ça En Est ». Le projet a reçu une bonne note et faisait partie des meilleurs de la promotion.",
+      "company": "Ocee",
+      "is_side_project": true,
+      "link": {
+         "url": "https://youtu.be/ezg4brJWcIk",
+         "text": "Vidéo promotionnelle" 
+      },
+      "start_date": "2021-09",
+      "end_date": "2021-12",
+      "row": 1,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 0.3,
+          "comments": "Utilisé pour le développement de l'application mobile."
+        },
+        {
+          "name": "Figma",
+          "frequency": 0.5,
+          "comments": "Utilisé pour la conception des maquettes de l'application mobile."
+        },
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "Utilisé pour le développement du site web."
+        },
+        {
+          "name": "Azure",
+          "frequency": 0.4,
+          "comments": "Utilisé pour l'hébergement de l'application web et mobile."
+        }
+      ],
+      "tasks": [
+        "Développement de l'application web",
+        "Développement de l'application mobile",
+        "Création de maquettes avec Figma",
+        "Création de la vidéo promotionnelle",
+        "Création de la page de présentation du projet"
+      ]
+    },
+    {
+      "title": "caroline-optique.fr",
+      "context": "Caroline Optique est une boutique de lunettes basée à Wormhout, une petite ville du nord de la France. J'ai créé un site web pour présenter l'entreprise, ses services et l'équipe. Un formulaire permet aux visiteurs d'entrer en contact avec Caroline Optique.",
+      "company": "Caroline Optique",
+      "start_date": "2022-01",
+      "is_side_project": false,
+      "end_date": "2022-01",
+      "link": {
+         "url": "https://www.caroline-optique.fr/",
+         "text": "Site web" 
+      },
+      "row": 1,
+      "technologies": [
+        {
+          "name": "HTML",
+          "frequency": 1,
+          "comments": "Utilisé pour structurer le contenu du site web."
+        },
+        {
+          "name": "CSS",
+          "frequency": 1,
+          "comments": "Utilisé pour styliser le contenu du site web."
+        },
+        {
+          "name": "JavaScript",
+          "frequency": 0.5,
+          "comments": "Utilisé pour ajouter des fonctionnalités interactives au site web."
+        },
+        {
+          "name": "Github Actions",
+          "frequency": 0.5,
+          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) du site web."
+        }
+      ],
+      "tasks": [
+        "Création du site web",
+        "Création des maquettes"
+      ]
+    }
+    
+  ],
+  "events": [
+    {
+      "name": "Pit'ch ta mission",
+      "date": "2024-07",
+      "description": "L'objectif de cet exercice est de présenter sa mission auprès des autres collaborateurs chez Pit. Ce meetup était strictement interne",
+      "type": "talk",
+      "icon": "/icons/companies/pit.png"
+    },
+    {
+      "name": "Impression 3D",
+      "date": "2025-09",
+      "description": "Initiation aux bases de l'impression 3D lors d'un meetup interne chez Pit",
+      "type": "talk",
+      "icon": "/icons/companies/aylabs.png"
+    },
+    {
+      "name": "Flutter",
+      "date": "2023-10",
+      "description": "Présentation de Flutter et de ses avantages lors d'un meetup chez Pit.",
+      "type": "talk",
+      "icon": "/icons/technologies/flutter.png"
+    },
+    {
+      "name": "Notion",
+      "date": "2023-03",
+      "description": "Présentation de Notion et de ses avantages lors d'un meetup interne chez Pit.",
+      "type": "talk",
+      "icon": "/icons/technologies/notion.png"
+    },
+    {
+      "name": "Notion",
+      "date": "2023-04",
+      "description": "Présentation de Notion et de ses avantages lors d'un meetup externe chez Ippon Technologies.",
+      "type": "talk",
+      "icon": "/icons/technologies/notion.png"
+    },
+    {
+      "name": "Github Copilot",
+      "date": "2022-06",
+      "description": "Présentation de Github Copilot et de ses avantages lors d'un meetup interne chez Pit.",
+      "type": "talk",
+      "icon": "/icons/technologies/copilot.png"
+    },
+    {
+      "name": "Message Queuing / RabbitMQ",
+      "date": "2022-02",
+      "description": "Présentation de Message Queuing via RabbitMQ lors d'un meetup interne chez Pit.",
+      "type": "talk",
+      "icon": "/icons/technologies/rabbitmq.png"
+    },
+    {
+      "name": "Azure Fundamentals AZ-900",
+      "date": "2021-08",
+      "description": "Certification Microsoft Azure Fundamentals AZ-900 obtenue.",
+      "type": "certification",
+      "icon": "/icons/technologies/azure.png"
+    }
+  ]
+}
