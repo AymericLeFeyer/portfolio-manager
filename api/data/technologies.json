@@ -223,5 +223,25 @@
     "name": "Docusaurus",
     "icon": "/icons/technologies/docusaurus.svg",
     "category": "Framework"
+  },
+  {
+    "name": "Claude Code",
+    "icon": "/icons/technologies/cc.png",
+    "category": "IA"
+  },
+  {
+    "name": "Bolt",
+    "icon": "/icons/technologies/bolt.png",
+    "category": "IA"
+  },
+  {
+    "name": "Kotlin Multiplatform",
+    "icon": "/icons/technologies/kmp.svg",
+    "category": "Framework"
+  },
+  {
+    "name": "Neo4j",
+    "icon": "/icons/technologies/neo4j.png",
+    "category": "Database"
   }
 ]

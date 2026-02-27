@@ -3,7 +3,6 @@
   "role": "Software Engineer - Mobile Enthousiast",
   "contacts": {
     "email": "lefeyer.aymeric@gmail.com",
-    "phone": "+33 6 52 88 11 55",
     "linkedin": "https://www.linkedin.com/in/AymericLeFeyer/",
     "github": "AymericLeFeyer"
   },
@@ -52,7 +51,7 @@
       "company": "Pit",
       "position": "Développeur android stagiaire",
       "start_date": "2020-06",
-      "end_date": "2020-08",
+      "end_date": "2020-09",
       "row": 2,
       "responsibilities": ["Développement d'une application mobile"]
     },
@@ -98,7 +97,7 @@
       "icon": "/icons/companies/uphf.png"
     },
     {
-      "institution": "Coaching personnel",
+      "institution": "Coaching personnalisé",
       "degree": "Kotlin / Compose",
       "start_date": "2024-06",
       "end_date": "2024-09",
@@ -132,30 +131,136 @@
       "end_date": "2022-09",
       "icon": "/icons/technologies/kubernetes.png"
     }
-   
   ],
   "missions": [
     {
+      "title": "AyPhone",
+      "context": "Un nouveau site portfolio, j'ai décidé de faire comme si c'était un OS dédié. L'idée est d'avoir une interface sympa et originale pour présenter mes projets, mes compétences et mon parcours. J'ai utilisé Kotlin MultiPlatform pour voir si la target web était stable. J'ai aussi pas mal utilisé Claude afin de gagner du temps.",
+      "company": "Perso",
+      "start_date": "2026-02",
+      "end_date": "2026-02",
+      "row": 1,
+      "link": {
+        "url": "https://aymeric.lefeyer.fr/",
+        "text": "Site web"
+      },
+      "technologies": [
+        {
+          "name": "Kotlin Multiplatform",
+          "frequency": 1,
+          "comments": "L'outil utilisé pour développer le site web, j'ai aussi générer une target android mais un peu la flemme de mettre ça sur les stores"
+        },
+        {
+          "name": "Claude Code",
+          "frequency": 1,
+          "comments": "Un outil de vibe clauding"
+        },
+        {
+          "name": "Firebase",
+          "frequency": 0.1,
+          "comments": "Pour l'hébergement"
+        }
+      ],
+      "tasks": [
+        "Conception",
+        "Découverte de KMP web",
+        "Plein de prompts",
+        "Déploiement du site sur Firebase"
+      ],
+      "is_side_project": true
+    },
+    {
       "title": "Time Life",
-      "context": "J'ai vibe codé le site sur lequel vous êtes en une soirée avec Bolt et Copilot. J'aime pas spécialement faire ça, mais c'est plus rapide.",
-      "company": "AyLabs",
+      "context": "J'ai vibe codé ce site en une soirée avec Bolt et Copilot. L'idée est d'afficher mes missions de manière temporelle plutôt que de définir les niveaux des technos avec des étoiles. Là au moins, c'est factuel.",
+      "company": "Perso",
       "start_date": "2026-01",
       "end_date": "2026-01",
       "row": 1,
       "link": {
-         "url": "https://timelife.aymeric.lefeyer.fr/",
-         "text": "Site web" 
+        "url": "https://timelife.aymeric.lefeyer.fr/",
+        "text": "Site web"
       },
       "technologies": [
         {
           "name": "React",
           "frequency": 1,
           "comments": "Le peu que j'ai écrit, c'était du React. Sinon Bolt génère du React"
+        },
+        {
+          "name": "Bolt",
+          "frequency": 1,
+          "comments": "Un outil de vibe coding"
+        }
+      ],
+      "tasks": ["Plein de prompts", "Déploiement du site sur Firebase"],
+      "is_side_project": true
+    },
+    {
+      "title": "Baraque",
+      "context": "Un outil pour gérer sa maison, les tâches et les entretiens",
+      "company": "Perso",
+      "start_date": "2024-06",
+      "end_date": "2024-07",
+      "row": 1,
+      "link": {
+        "url": "https://www.youtube.com/watch?v=cPm1tRIJuTA",
+        "text": "Vidéo"
+      },
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "L'outil pour développer le site web"
+        },
+        {
+          "name": "Next.js",
+          "frequency": 1,
+          "comments": "Ce qui permet de faire du server side rendering et d'avoir une bonne performance."
+        },
+        {
+          "name": "Firebase",
+          "frequency": 1,
+          "comments": "Pour l'hébergement du site"
         }
       ],
       "tasks": [
-        "Plein de prompts",
-        "Déploiement du site"
+        "Conception",
+        "Apprentissage de React et Next.js",
+        "Développement du site web",
+        "Déploiement du site",
+        "Vidéo de présentation du projet, Built in public"
+      ],
+      "is_side_project": true
+    },
+    {
+      "title": "Des Cartes",
+      "context": "Une app de gestion de jeux de sociétés, pour trouver le jeu qui correspond à l'occasion, au nombre de joueurs etc",
+      "company": "Perso",
+      "start_date": "2023-12",
+      "end_date": "2023-12",
+      "row": 1,
+      "technologies": [
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "L'outil pour développer l'application mobile"
+        },
+        {
+          "name": "ExpressJS",
+          "frequency": 1,
+          "comments": "Ce qui permet de créer des API pour l'application mobile."
+        },
+        {
+          "name": "Neo4j",
+          "frequency": 0.5,
+          "comments": "Pour une base de donnée graph afin de faire des recommandations de jeux de société en fonction de différents critères."
+        }
+      ],
+      "tasks": [
+        "Conception",
+        "Apprentissage de Neo4j",
+        "Développement de l'application mobile",
+        "Déploiement de l'application"
       ],
       "is_side_project": true
     },
@@ -166,8 +271,8 @@
       "start_date": "2025-08",
       "end_date": "2025-08",
       "link": {
-         "url": "https://www.aylabs.fr/",
-         "text": "Site web" 
+        "url": "https://www.aylabs.fr/",
+        "text": "Site web"
       },
       "row": 1,
       "technologies": [
@@ -191,8 +296,8 @@
       "start_date": "2025-12",
       "end_date": "2025-12",
       "link": {
-         "url": "https://www.docs.aylabs.fr/",
-         "text": "Site web" 
+        "url": "https://www.docs.aylabs.fr/",
+        "text": "Site web"
       },
       "row": 1,
       "technologies": [
@@ -207,10 +312,7 @@
           "comments": "Un outil très sympa pour créer des documentations"
         }
       ],
-      "tasks": [
-        "Rédaction de documentations",
-        "Déploiement du site"
-      ],
+      "tasks": ["Rédaction de documentations", "Déploiement du site"],
       "is_side_project": true
     },
     {
@@ -290,6 +392,78 @@
         "Documentation, et formations envers mes collègues",
         "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code",
         "Présentation de fonctionnalités lors de démos aux parties prenantes"
+      ]
+    },
+    {
+      "title": "Développeur d'application React",
+      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. La troisième partie de ma mission consiste à la migration de notre outil de paramétrage de Vue vers React",
+      "company": "Decathlon",
+      "start_date": "2026-02",
+      "end_date": "2026-06",
+      "row": 2,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": "Création d'une nouvelle appli de paramétrage en React pour remplacer l'ancienne application en VueJS"
+        },
+        {
+          "name": "Kotlin",
+          "frequency": 0.2,
+          "comments": "Le language principal pour le développement de l'application mobile. Je continue à faire du Kotlin pour les nouvelles fonctionnalités et la maintenance de l'application mobile."
+        },
+        {
+          "name": "Compose",
+          "frequency": 0.2,
+          "comments": "Le framework UI utilisé pour construire l'interface utilisateur de l'application mobile."
+        },
+        {
+          "name": "Koin",
+          "frequency": 0.2,
+          "comments": "Utilisé pour la gestion de l'injection de dépendances dans l'application."
+        },
+        {
+          "name": "Ktor",
+          "frequency": 0.2,
+          "comments": "Utilisé pour les communications réseau et les appels API."
+        },
+        {
+          "name": "Git",
+          "frequency": 1,
+          "comments": "Utilisé pour le contrôle de version et la collaboration avec l'équipe."
+        },
+        {
+          "name": "Github",
+          "frequency": 1,
+          "comments": "Plateforme utilisée pour l'hébergement du code source et la gestion des pull requests."
+        },
+        {
+          "name": "Github Actions",
+          "frequency": 1,
+          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile."
+        },
+        {
+          "name": "Jira",
+          "frequency": 0.5,
+          "comments": "Utilisé pour la gestion des tâches et le suivi des bugs."
+        },
+        {
+          "name": "Kubernetes",
+          "frequency": 0.1,
+          "comments": "Utilisé pour le déploiement et la gestion des services backend, pour donner un coup de main à l'équipe backend et agir en cas d'incident"
+        },
+        {
+          "name": "VueJS",
+          "frequency": 0.2,
+          "comments": "Fonctionnalités ou correctifs sur l'application web de paramétrage de notre application"
+        }
+      ],
+      "tasks": [
+        "Migration de l'application Vue en React",
+        "Déploiement",
+        "Conception et architecture",
+        "Maintenance de l'application mobile"
       ]
     },
     {
@@ -469,7 +643,6 @@
           "frequency": 0.5,
           "comments": "Utilisé comme base de données principale pour stocker les données de l'application."
         }
-      
       ],
       "tasks": [
         "Création de pages et composants Angular pour afficher les informations d'éligibilité et les offres internet",
@@ -718,8 +891,8 @@
       "start_date": "2020-07",
       "end_date": "2020-07",
       "link": {
-         "url": "https://www.habidom.fr/",
-         "text": "Site web" 
+        "url": "https://www.habidom.fr/",
+        "text": "Site web"
       },
       "row": 1,
       "is_side_project": false,
@@ -753,8 +926,8 @@
       "start_date": "2021-08",
       "end_date": "2021-08",
       "link": {
-         "url": "https://www.candoo.fr/",
-         "text": "Landing page" 
+        "url": "https://www.candoo.fr/",
+        "text": "Landing page"
       },
       "row": 1,
       "is_side_project": false,
@@ -784,8 +957,8 @@
       "end_date": "2020-05",
       "is_side_project": true,
       "link": {
-         "url": "https://stelapix.github.io/BonapWeb/",
-         "text": "Landing page" 
+        "url": "https://stelapix.github.io/BonapWeb/",
+        "text": "Landing page"
       },
       "row": 2,
       "technologies": [
@@ -819,8 +992,8 @@
       "company": "Ocee",
       "is_side_project": true,
       "link": {
-         "url": "https://youtu.be/ezg4brJWcIk",
-         "text": "Vidéo promotionnelle" 
+        "url": "https://youtu.be/ezg4brJWcIk",
+        "text": "Vidéo promotionnelle"
       },
       "start_date": "2021-09",
       "end_date": "2021-12",
@@ -863,8 +1036,8 @@
       "is_side_project": false,
       "end_date": "2022-01",
       "link": {
-         "url": "https://www.caroline-optique.fr/",
-         "text": "Site web" 
+        "url": "https://www.caroline-optique.fr/",
+        "text": "Site web"
       },
       "row": 1,
       "technologies": [
@@ -889,12 +1062,8 @@
           "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) du site web."
         }
       ],
-      "tasks": [
-        "Création du site web",
-        "Création des maquettes"
-      ]
+      "tasks": ["Création du site web", "Création des maquettes"]
     }
-    
   ],
   "events": [
     {

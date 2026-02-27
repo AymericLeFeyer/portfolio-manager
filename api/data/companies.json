@@ -63,12 +63,16 @@
     "name": "TalentPlug",
     "icon": "/icons/companies/talentplug.jpg"
   },
-   {
+  {
     "name": "Ocee",
     "icon": "/icons/companies/ocee.png"
   },
-   {
+  {
     "name": "Bonap",
     "icon": "/icons/companies/bonap.png"
+  },
+  {
+    "name": "Perso",
+    "icon": "/icons/companies/perso.jpeg"
   }
 ]
