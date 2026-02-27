@@ -17,9 +17,19 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 
 await mkdir(join(DATA_PATH, 'icons'), { recursive: true })
 
+const API_SECRET = process.env.API_SECRET
+
 const fastify = Fastify({ logger: true })
 
 await fastify.register(cors, { origin: allowedOrigins })
+
+fastify.addHook('onRequest', async (request, reply) => {
+  if (request.method === 'GET') return
+  if (!API_SECRET) return
+  if (request.headers['x-admin-secret'] !== API_SECRET) {
+    return reply.code(401).send({ error: 'Unauthorized' })
+  }
+})
 
 await fastify.register(fastifyMultipart, { limits: { fileSize: 10 * 1024 * 1024 } })
 
