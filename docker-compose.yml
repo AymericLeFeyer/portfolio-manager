@@ -4,7 +4,7 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./api/data:/app/data
+      - portfolio_data:/app/data
     environment:
       - DATA_PATH=/app/data
       - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,http://192.168.1.35:3000
@@ -28,3 +28,6 @@ services:
 networks:
   portfolio:
     driver: bridge
+
+volumes:
+  portfolio_data:
