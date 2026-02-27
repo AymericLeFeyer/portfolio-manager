@@ -4,9 +4,9 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./data:/data
+      - ./api/data:/app/data
     environment:
-      - DATA_PATH=/data
+      - DATA_PATH=/app/data
       - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,http://192.168.1.35:3000
     restart: unless-stopped
     networks:

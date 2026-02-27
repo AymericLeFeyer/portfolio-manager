@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'fs/promises'
 import { join } from 'path'
 
-const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), '..', 'data')
+const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), 'data')
 
 async function readProfile() {
   const raw = await readFile(join(DATA_PATH, 'profile.json'), 'utf-8')

@@ -3,7 +3,7 @@ import { createWriteStream } from 'fs'
 import { join } from 'path'
 import { pipeline } from 'stream/promises'
 
-const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), '..', 'data')
+const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), 'data')
 const ICONS_PATH = join(DATA_PATH, 'icons')
 
 export default async function imagesRoutes(fastify) {

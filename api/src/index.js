@@ -9,7 +9,7 @@ import companiesRoutes from './routes/companies.js'
 import technologiesRoutes from './routes/technologies.js'
 import imagesRoutes from './routes/images.js'
 
-const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), '..', 'data')
+const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), 'data')
 
 const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(',')
