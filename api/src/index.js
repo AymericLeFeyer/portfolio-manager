@@ -11,17 +11,21 @@ import imagesRoutes from './routes/images.js'
 
 const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), 'data')
 
-const allowedOrigins = process.env.ALLOWED_ORIGINS
-  ? process.env.ALLOWED_ORIGINS.split(',')
-  : ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:4173']
-
 await mkdir(join(DATA_PATH, 'icons'), { recursive: true })
 
 const API_SECRET = process.env.API_SECRET
 
 const fastify = Fastify({ logger: true })
 
-await fastify.register(cors, { origin: allowedOrigins })
+await fastify.register(cors, { origin: {
+  origin: [
+      'https://timelife.aymeric.lefeyer.fr',
+      'https://aymeric.lefeyer.fr',
+      'http://localhost:3000',
+      'http://localhost:5173',
+      'http://localhost:4173',
+    ],
+} })
 
 fastify.addHook('onRequest', async (request, reply) => {
   if (request.method === 'GET') return
