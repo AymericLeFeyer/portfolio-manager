@@ -37,7 +37,9 @@
       "start_date": "2019-06",
       "end_date": "2019-08",
       "row": 2,
-      "responsibilities": ["Manutentionnaire CACES 1-3-5"]
+      "responsibilities": [
+        "Manutentionnaire CACES 1-3-5"
+      ]
     },
     {
       "company": "Freelance",
@@ -45,7 +47,9 @@
       "start_date": "2021-07",
       "end_date": "2023-07",
       "row": 1,
-      "responsibilities": ["Développement d'une application mobile"]
+      "responsibilities": [
+        "Développement d'une application mobile"
+      ]
     },
     {
       "company": "Pit",
@@ -53,7 +57,9 @@
       "start_date": "2020-06",
       "end_date": "2020-09",
       "row": 2,
-      "responsibilities": ["Développement d'une application mobile"]
+      "responsibilities": [
+        "Développement d'une application mobile"
+      ]
     },
     {
       "company": "Pit",
@@ -192,7 +198,10 @@
           "comments": "Un outil de vibe coding"
         }
       ],
-      "tasks": ["Plein de prompts", "Déploiement du site sur Firebase"],
+      "tasks": [
+        "Plein de prompts",
+        "Déploiement du site sur Firebase"
+      ],
       "is_side_project": true
     },
     {
@@ -312,7 +321,10 @@
           "comments": "Un outil très sympa pour créer des documentations"
         }
       ],
-      "tasks": ["Rédaction de documentations", "Déploiement du site"],
+      "tasks": [
+        "Rédaction de documentations",
+        "Déploiement du site"
+      ],
       "is_side_project": true
     },
     {
@@ -320,7 +332,7 @@
       "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. La seconde partie de ma mission consiste à la migration de Flutter vers Kotlin / Compose.",
       "company": "Decathlon",
       "start_date": "2024-05",
-      "end_date": "Present",
+      "end_date": "2026-02",
       "row": 2,
       "is_side_project": false,
       "technologies": [
@@ -1062,7 +1074,10 @@
           "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) du site web."
         }
       ],
-      "tasks": ["Création du site web", "Création des maquettes"]
+      "tasks": [
+        "Création du site web",
+        "Création des maquettes"
+      ]
     }
   ],
   "events": [
