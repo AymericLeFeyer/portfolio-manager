@@ -8,6 +8,7 @@ import profileRoutes from './routes/profile.js'
 import companiesRoutes from './routes/companies.js'
 import technologiesRoutes from './routes/technologies.js'
 import imagesRoutes from './routes/images.js'
+import aylabsRoutes from './routes/aylabs.js'
 
 const DATA_PATH = process.env.DATA_PATH || join(process.cwd(), 'data')
 
@@ -47,6 +48,7 @@ await fastify.register(profileRoutes, { prefix: '/api' })
 await fastify.register(companiesRoutes, { prefix: '/api' })
 await fastify.register(technologiesRoutes, { prefix: '/api' })
 await fastify.register(imagesRoutes, { prefix: '/api' })
+await fastify.register(aylabsRoutes, { prefix: '/api' })
 
 try {
   await fastify.listen({ port: 3001, host: '0.0.0.0' })
