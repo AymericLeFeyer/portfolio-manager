@@ -7,6 +7,7 @@ import {
   CalendarOutlined,
   ShopOutlined,
   CodeOutlined,
+  FileTextOutlined,
 } from '@ant-design/icons'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ const menuItems = [
   { key: '/events', icon: <CalendarOutlined />, label: 'Évènements' },
   { key: '/companies', icon: <ShopOutlined />, label: 'Entreprises' },
   { key: '/technologies', icon: <CodeOutlined />, label: 'Technologies' },
+  { key: '/raw', icon: <FileTextOutlined />, label: 'JSON brut' },
 ]
 
 export default function AppLayout() {
