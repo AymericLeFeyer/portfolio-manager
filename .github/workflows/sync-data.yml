@@ -1,0 +1,32 @@
+name: Sync data from API
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch JSON files from API
+        run: |
+          curl -fsSL https://api.aymeric.lefeyer.fr/api/raw/profile       | jq . > data/profile.json
+          curl -fsSL https://api.aymeric.lefeyer.fr/api/raw/companies      | jq . > data/companies.json
+          curl -fsSL https://api.aymeric.lefeyer.fr/api/raw/technologies   | jq . > data/technologies.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/profile.json data/companies.json data/technologies.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(data): sync from API $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
