@@ -1,8 +1,9 @@
 {
   "name": "Aymeric Le Feyer",
-  "role": "Software Engineer - Mobile Enthousiast",
+  "role": "Software Engineer - Frontend Enthousiast",
   "contacts": {
     "email": "lefeyer.aymeric@gmail.com",
+    "phone": "0649142645",
     "linkedin": "https://www.linkedin.com/in/AymericLeFeyer/",
     "github": "AymericLeFeyer"
   },
@@ -304,11 +305,8 @@
       "company": "AyLabs",
       "start_date": "2025-12",
       "end_date": "2025-12",
-      "link": {
-        "url": "https://www.docs.aylabs.fr/",
-        "text": "Site web"
-      },
       "row": 1,
+      "is_side_project": true,
       "technologies": [
         {
           "name": "React",
@@ -325,7 +323,10 @@
         "Rédaction de documentations",
         "Déploiement du site"
       ],
-      "is_side_project": true
+      "link": {
+        "url": "https://docs.aylabs.fr/",
+        "text": "Site web"
+      }
     },
     {
       "title": "Développeur d'application mobile Kotlin",

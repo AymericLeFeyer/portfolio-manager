@@ -36,8 +36,8 @@
   },
   {
     "name": "Jira",
-    "icon": "/icons/technologies/jira.svg",
-    "category": "Tool"
+    "category": "Tool",
+    "icon": "/icons/technologies/jira.png"
   },
   {
     "name": "Kubernetes",
@@ -221,8 +221,8 @@
   },
   {
     "name": "Docusaurus",
-    "icon": "/icons/technologies/docusaurus.svg",
-    "category": "Framework"
+    "category": "Framework",
+    "icon": "/icons/technologies/docusaurus.png"
   },
   {
     "name": "Claude Code",
@@ -236,8 +236,8 @@
   },
   {
     "name": "Kotlin Multiplatform",
-    "icon": "/icons/technologies/kmp.svg",
-    "category": "Framework"
+    "category": "Framework",
+    "icon": "/icons/technologies/kmp.png"
   },
   {
     "name": "Neo4j",
