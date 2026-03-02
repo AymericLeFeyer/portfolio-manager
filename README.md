@@ -1,7 +1,11 @@
-# Portfolio Manager
+<div align="center">
+  
+# 📂 Portfolio Manager
 
-An administration tool to manage portfolio JSON data through a guided web interface.
+**An administration tool to manage portfolio JSON data through a guided web interface.**
 The admin runs **locally only**; only the API is deployed on the server.
+
+</div>
 
 ## Screenshots
 <img width="1869" height="686" alt="Editing missions" src="https://github.com/user-attachments/assets/6554de4d-1847-423f-bea3-46d3ac30dc2e" />
