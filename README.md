@@ -32,7 +32,9 @@ portfolio-manager/
 │   │       ├── profile.js
 │   │       ├── companies.js
 │   │       ├── technologies.js
-│   │       └── images.js   ← CDN listing + upload
+│   │       ├── images.js   ← CDN listing + upload
+│   │       ├── raw.js      ← édition JSON brut
+│   │       └── aylabs.js   ← proxy YouTube stats
 │   └── package.json
 ├── admin/                  ← React 18 + Vite 5 + Ant Design 5
 │   ├── src/
@@ -89,7 +91,9 @@ Variables d'environnement à configurer sur le serveur :
 | Variable | Valeur exemple | Rôle |
 |---|---|---|
 | `DATA_PATH` | `/data` | Chemin vers le dossier de données (monté en volume) |
-| `ALLOWED_ORIGINS` | `http://localhost:5173,http://monip:5173` | Origines autorisées par le CORS |
+| `API_SECRET` | `mon-secret` | Protège toutes les routes d'écriture (POST/PUT/DELETE) via le header `X-Admin-Secret` |
+
+> Si `API_SECRET` est absent, la protection est désactivée (utile en dev local).
 
 Le volume Docker monte `./data` (ou un répertoire serveur) dans `/data` dans le conteneur.
 
@@ -106,8 +110,9 @@ Le volume Docker monte `./data` (ou un répertoire serveur) dans `/data` dans le
 | `/events` | Talks, certifications, conférences |
 | `/companies` | Référentiel entreprises |
 | `/technologies` | Référentiel technologies |
+| `/raw` | Éditeur JSON brut (les 3 fichiers, avec validation et téléchargement) |
 
-Chaque page = tableau + formulaire dans un Drawer latéral.
+Les pages CRUD = tableau + formulaire dans un Drawer latéral.
 
 ---
 
@@ -198,5 +203,28 @@ La valeur stockée en JSON est un path relatif `/icons/companies/aylabs.png`
 | Méthode | Route | Description |
 |---------|-------|-------------|
 | GET | `/api/images` | Liste toutes les images |
-| POST | `/api/upload?folder=xxx` | Upload une image |
+| POST | `/api/upload?folder=xxx` | Upload une image (multipart, max 10 Mo) |
 | GET | `/icons/{folder}/{fichier}` | Sert l'image (CDN statique) |
+
+### JSON brut
+| Méthode | Route | Description |
+|---------|-------|-------------|
+| GET | `/api/raw/{profile\|companies\|technologies}` | Retourne le fichier JSON tel quel |
+| PUT | `/api/raw/{profile\|companies\|technologies}` | Écrase le fichier JSON (auth requise) |
+
+### Divers
+| Méthode | Route | Description |
+|---------|-------|-------------|
+| GET | `/api/youtube-stats` | Proxy vers `aylabs.fr/youtube-stats.json` |
+
+---
+
+## Authentification
+
+Les routes d'écriture (POST / PUT / DELETE) sont protégées par un secret partagé.
+
+**API** : vérifie le header `X-Admin-Secret: <API_SECRET>` sur toutes les requêtes non-GET.
+
+**Admin** : le client axios (`src/api/client.js`) injecte automatiquement ce header via un intercepteur, à partir de la variable d'environnement `VITE_ADMIN_SECRET`.
+
+En dev local sans `API_SECRET` défini, la protection est désactivée côté API.

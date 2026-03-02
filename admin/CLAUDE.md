@@ -22,12 +22,15 @@ Vite proxies `/api` → `http://localhost:3001`.
 | /events | Events | CRUD évènements |
 | /companies | Companies | Référentiel entreprises |
 | /technologies | Technologies | Référentiel technologies |
+| /raw | RawEditor | Édition JSON brut des 3 fichiers, avec validation live et téléchargement |
 
 ## Key patterns
 - Each page: list (Table) + Drawer form
 - All forms use Ant Design Form with `useForm()`
 - `editIndex` is the array index (passed to API as `:index`)
 - `src/api/client.js` — axios instance, baseURL = `/api` (proxied in dev, nginx in prod)
+- The client auto-injects `X-Admin-Secret` header on all non-GET requests (from `VITE_ADMIN_SECRET` env var)
+- Always import `client` from `src/api/client.js`, never use raw `axios` directly
 
 ## Autocomplete
 - MissionForm: company name from `/api/companies`, technology name from `/api/technologies`

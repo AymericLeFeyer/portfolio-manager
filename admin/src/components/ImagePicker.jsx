@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Modal, Upload, Input, Button, Spin, Space, theme, message } from 'antd'
 import { PictureOutlined, CheckOutlined, UploadOutlined } from '@ant-design/icons'
-import axios from 'axios'
+import client from '../api/client'
 
 export default function ImagePicker({ value, onChange, folder = 'misc' }) {
   const [open, setOpen] = useState(false)
@@ -14,7 +14,7 @@ export default function ImagePicker({ value, onChange, folder = 'misc' }) {
   const fetchImages = useCallback(async () => {
     setLoading(true)
     try {
-      const { data } = await axios.get('/api/images')
+      const { data } = await client.get('/images')
       setImages(data)
     } catch {
       // ignore
@@ -39,7 +39,7 @@ export default function ImagePicker({ value, onChange, folder = 'misc' }) {
     const formData = new FormData()
     formData.append('file', file)
     try {
-      const { data } = await axios.post(`/api/upload?folder=${folder}`, formData, {
+      const { data } = await client.post(`/upload?folder=${folder}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       })
       setImages(prev => [...prev, { path: data.path, name: data.name, folder }])
