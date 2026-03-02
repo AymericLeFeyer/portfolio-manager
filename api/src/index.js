@@ -21,8 +21,12 @@ const fastify = Fastify({ logger: true })
 
 await fastify.register(cors, { origin: {
   origin: [
-      'https://timelife.aymeric.lefeyer.fr',
       'https://aymeric.lefeyer.fr',
+      'https://www.aymeric.lefeyer.fr',
+      'https://timelife.aymeric.lefeyer.fr',
+      'https://www.timelife.aymeric.lefeyer.fr',
+      'https://ayphone.aymeric.lefeyer.fr',
+      'https://www.ayphone.aymeric.lefeyer.fr',
       'http://localhost:3000',
       'http://localhost:5173',
       'http://localhost:4173',
