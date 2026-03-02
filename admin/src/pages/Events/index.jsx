@@ -40,14 +40,17 @@ export default function Events() {
     {
       title: 'Actions',
       key: 'actions',
-      render: (_, __, idx) => (
-        <Space>
-          <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
-          <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
-            <Button icon={<DeleteOutlined />} danger size="small" />
-          </Popconfirm>
-        </Space>
-      ),
+      render: (_, record) => {
+        const idx = events.indexOf(record)
+        return (
+          <Space>
+            <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
+            <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
+              <Button icon={<DeleteOutlined />} danger size="small" />
+            </Popconfirm>
+          </Space>
+        )
+      },
     },
   ]
 
@@ -59,7 +62,7 @@ export default function Events() {
           Ajouter
         </Button>
       </div>
-      <Table dataSource={events} columns={columns} rowKey={(_, idx) => idx} pagination={{ pageSize: 20 }} />
+      <Table dataSource={events} columns={columns} rowKey={(record) => events.indexOf(record)} pagination={{ pageSize: 20 }} />
       <EventForm
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}

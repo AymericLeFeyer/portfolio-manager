@@ -41,14 +41,17 @@ export default function Employment() {
     {
       title: 'Actions',
       key: 'actions',
-      render: (_, __, idx) => (
-        <Space>
-          <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
-          <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
-            <Button icon={<DeleteOutlined />} danger size="small" />
-          </Popconfirm>
-        </Space>
-      ),
+      render: (_, record) => {
+        const idx = employment.indexOf(record)
+        return (
+          <Space>
+            <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
+            <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
+              <Button icon={<DeleteOutlined />} danger size="small" />
+            </Popconfirm>
+          </Space>
+        )
+      },
     },
   ]
 
@@ -60,7 +63,7 @@ export default function Employment() {
           Ajouter
         </Button>
       </div>
-      <Table dataSource={employment} columns={columns} rowKey={(_, idx) => idx} pagination={{ pageSize: 20 }} />
+      <Table dataSource={employment} columns={columns} rowKey={(record) => employment.indexOf(record)} pagination={{ pageSize: 20 }} />
       <EmploymentForm
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}

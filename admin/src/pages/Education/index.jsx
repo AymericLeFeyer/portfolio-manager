@@ -33,14 +33,17 @@ export default function Education() {
     {
       title: 'Actions',
       key: 'actions',
-      render: (_, __, idx) => (
-        <Space>
-          <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
-          <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
-            <Button icon={<DeleteOutlined />} danger size="small" />
-          </Popconfirm>
-        </Space>
-      ),
+      render: (_, record) => {
+        const idx = education.indexOf(record)
+        return (
+          <Space>
+            <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
+            <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
+              <Button icon={<DeleteOutlined />} danger size="small" />
+            </Popconfirm>
+          </Space>
+        )
+      },
     },
   ]
 
@@ -52,7 +55,7 @@ export default function Education() {
           Ajouter
         </Button>
       </div>
-      <Table dataSource={education} columns={columns} rowKey={(_, idx) => idx} pagination={{ pageSize: 20 }} />
+      <Table dataSource={education} columns={columns} rowKey={(record) => education.indexOf(record)} pagination={{ pageSize: 20 }} />
       <EducationForm
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}

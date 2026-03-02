@@ -60,14 +60,17 @@ export default function Missions() {
     {
       title: 'Actions',
       key: 'actions',
-      render: (_, __, idx) => (
-        <Space>
-          <Button icon={<EditOutlined />} onClick={() => handleEdit(idx)} size="small" />
-          <Popconfirm title="Supprimer cette mission ?" onConfirm={() => handleDelete(idx)}>
-            <Button icon={<DeleteOutlined />} danger size="small" />
-          </Popconfirm>
-        </Space>
-      ),
+      render: (_, record) => {
+        const idx = missions.indexOf(record)
+        return (
+          <Space>
+            <Button icon={<EditOutlined />} onClick={() => handleEdit(idx)} size="small" />
+            <Popconfirm title="Supprimer cette mission ?" onConfirm={() => handleDelete(idx)}>
+              <Button icon={<DeleteOutlined />} danger size="small" />
+            </Popconfirm>
+          </Space>
+        )
+      },
     },
   ]
 
@@ -82,7 +85,7 @@ export default function Missions() {
       <Table
         dataSource={missions}
         columns={columns}
-        rowKey={(_, idx) => idx}
+        rowKey={(record) => missions.indexOf(record)}
         pagination={{ pageSize: 20 }}
       />
       <MissionForm

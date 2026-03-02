@@ -37,14 +37,17 @@ export default function Technologies() {
     {
       title: 'Actions',
       key: 'actions',
-      render: (_, __, idx) => (
-        <Space>
-          <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
-          <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
-            <Button icon={<DeleteOutlined />} danger size="small" />
-          </Popconfirm>
-        </Space>
-      ),
+      render: (_, record) => {
+        const idx = technologies.indexOf(record)
+        return (
+          <Space>
+            <Button icon={<EditOutlined />} onClick={() => { setEditIndex(idx); setDrawerOpen(true) }} size="small" />
+            <Popconfirm title="Supprimer ?" onConfirm={() => handleDelete(idx)}>
+              <Button icon={<DeleteOutlined />} danger size="small" />
+            </Popconfirm>
+          </Space>
+        )
+      },
     },
   ]
 
@@ -56,7 +59,7 @@ export default function Technologies() {
           Ajouter
         </Button>
       </div>
-      <Table dataSource={technologies} columns={columns} rowKey={(_, idx) => idx} pagination={{ pageSize: 30 }} />
+      <Table dataSource={technologies} columns={columns} rowKey={(record) => technologies.indexOf(record)} pagination={{ pageSize: 30 }} />
       <TechnologyForm
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
