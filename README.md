@@ -3,6 +3,14 @@
 Outil d'administration pour gérer les données JSON du portfolio via une interface web guidée.
 L'admin tourne **en local uniquement** ; seule l'API est déployée sur le serveur.
 
+## Screenshots
+<img width="1869" height="686" alt="Modification des missions" src="https://github.com/user-attachments/assets/6554de4d-1847-423f-bea3-46d3ac30dc2e" />
+<img width="1879" height="811" alt="Modification brute du JSON" src="https://github.com/user-attachments/assets/a00f32fb-c67a-410e-addf-cb3364621b7f" />
+<img width="1883" height="885" alt="Ajout de nouvelles icones" src="https://github.com/user-attachments/assets/f59ebc00-2485-45d1-adca-e7927c88214d" />
+
+
+
+
 ---
 
 ## Architecture
