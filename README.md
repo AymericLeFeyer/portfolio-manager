@@ -1,12 +1,12 @@
 # Portfolio Manager
 
-Outil d'administration pour gérer les données JSON du portfolio via une interface web guidée.
-L'admin tourne **en local uniquement** ; seule l'API est déployée sur le serveur.
+An administration tool to manage portfolio JSON data through a guided web interface.
+The admin runs **locally only**; only the API is deployed on the server.
 
 ## Screenshots
-<img width="1869" height="686" alt="Modification des missions" src="https://github.com/user-attachments/assets/6554de4d-1847-423f-bea3-46d3ac30dc2e" />
-<img width="1879" height="811" alt="Modification brute du JSON" src="https://github.com/user-attachments/assets/a00f32fb-c67a-410e-addf-cb3364621b7f" />
-<img width="1883" height="885" alt="Ajout de nouvelles icones" src="https://github.com/user-attachments/assets/f59ebc00-2485-45d1-adca-e7927c88214d" />
+<img width="1869" height="686" alt="Editing missions" src="https://github.com/user-attachments/assets/6554de4d-1847-423f-bea3-46d3ac30dc2e" />
+<img width="1879" height="811" alt="Raw JSON editor" src="https://github.com/user-attachments/assets/a00f32fb-c67a-410e-addf-cb3364621b7f" />
+<img width="1883" height="885" alt="Adding new icons" src="https://github.com/user-attachments/assets/f59ebc00-2485-45d1-adca-e7927c88214d" />
 
 
 
@@ -17,125 +17,125 @@ L'admin tourne **en local uniquement** ; seule l'API est déployée sur le serve
 
 ```
 portfolio-manager/
-├── data/                   ← Données persistantes (volume Docker partagé)
-│   ├── profile.json        ← profil, missions, emploi, formation, évènements
-│   ├── companies.json      ← référentiel entreprises
-│   ├── technologies.json   ← référentiel technologies
-│   └── icons/              ← images uploadées (non versionnées)
+├── data/                   ← Persistent data (shared Docker volume)
+│   ├── profile.json        ← profile, missions, employment, education, events
+│   ├── companies.json      ← companies reference list
+│   ├── technologies.json   ← technologies reference list
+│   └── icons/              ← uploaded images (not versioned)
 │       ├── companies/
 │       ├── technologies/
 │       └── misc/
 ├── api/                    ← Fastify 4, Node 20, ESM — port 3001
 │   ├── src/
-│   │   ├── index.js        ← point d'entrée, CORS, plugins
+│   │   ├── index.js        ← entry point, CORS, plugins
 │   │   └── routes/
 │   │       ├── profile.js
 │   │       ├── companies.js
 │   │       ├── technologies.js
 │   │       ├── images.js   ← CDN listing + upload
-│   │       ├── raw.js      ← édition JSON brut
-│   │       └── aylabs.js   ← proxy YouTube stats
+│   │       ├── raw.js      ← raw JSON editor
+│   │       └── aylabs.js   ← YouTube stats proxy
 │   └── package.json
 ├── admin/                  ← React 18 + Vite 5 + Ant Design 5
 │   ├── src/
-│   │   ├── pages/          ← une page par entité (CRUD Drawer)
+│   │   ├── pages/          ← one page per entity (CRUD Drawer)
 │   │   └── components/
 │   │       └── ImagePicker.jsx
-│   ├── nginx.conf          ← proxy API + icons en production
+│   ├── nginx.conf          ← API + icons proxy in production
 │   └── package.json
 ├── docker-compose.yml
-└── CLAUDE.md               ← instructions pour Claude Code
+└── CLAUDE.md               ← instructions for Claude Code
 ```
 
 ---
 
-## Lancer en développement (local)
+## Running in development (local)
 
 ```bash
 # 1. API
 cd api
 npm install
-node src/index.js          # écoute sur http://localhost:3001
+node src/index.js          # listens on http://localhost:3001
 
-# 2. Admin (autre terminal)
+# 2. Admin (another terminal)
 cd admin
 npm install
-npm run dev                # écoute sur http://localhost:5173
+npm run dev                # listens on http://localhost:5173
 ```
 
-Vite proxifie automatiquement `/api` et `/icons` vers `:3001`.
-Ouvre http://localhost:5173 dans le navigateur.
+Vite automatically proxies `/api` and `/icons` to `:3001`.
+Open http://localhost:5173 in your browser.
 
 ---
 
-## Lancer avec Docker
+## Running with Docker
 
 ```bash
 docker-compose up --build
 ```
 
-- API exposée sur http://localhost:3001
-- Admin exposée sur http://localhost:3000 (nginx sert le build React + proxifie vers l'API)
+- API exposed on http://localhost:3001
+- Admin exposed on http://localhost:3000 (nginx serves the React build + proxies to the API)
 
-> L'admin Docker est pratique pour tester le build de production, mais en usage quotidien
-> préfère le mode dev (`npm run dev`) qui recharge à chaud.
+> The Docker admin is handy for testing the production build, but for daily use
+> prefer dev mode (`npm run dev`) which supports hot reload.
 
 ---
 
-## Déploiement serveur (Portainer)
+## Server deployment (Portainer)
 
-Déployer **uniquement le service `api`** depuis `docker-compose.yml`.
-L'admin reste en local (`npm run dev`).
+Deploy **only the `api` service** from `docker-compose.yml`.
+The admin stays local (`npm run dev`).
 
-Variables d'environnement à configurer sur le serveur :
-| Variable | Valeur exemple | Rôle |
+Environment variables to configure on the server:
+| Variable | Example value | Purpose |
 |---|---|---|
-| `DATA_PATH` | `/data` | Chemin vers le dossier de données (monté en volume) |
-| `API_SECRET` | `mon-secret` | Protège toutes les routes d'écriture (POST/PUT/DELETE) via le header `X-Admin-Secret` |
+| `DATA_PATH` | `/data` | Path to the data folder (mounted as a volume) |
+| `API_SECRET` | `my-secret` | Protects all write routes (POST/PUT/DELETE) via the `X-Admin-Secret` header |
 
-> Si `API_SECRET` est absent, la protection est désactivée (utile en dev local).
+> If `API_SECRET` is not set, protection is disabled (useful in local dev).
 
-Le volume Docker monte `./data` (ou un répertoire serveur) dans `/data` dans le conteneur.
+The Docker volume mounts `./data` (or a server directory) into `/data` inside the container.
 
 ---
 
-## Pages de l'admin
+## Admin pages
 
 | URL | Description |
 |-----|-------------|
-| `/profile` | Nom, rôle, contacts |
-| `/missions` | Missions freelance / projets |
-| `/employment` | Expériences professionnelles |
-| `/education` | Formations |
-| `/events` | Talks, certifications, conférences |
-| `/companies` | Référentiel entreprises |
-| `/technologies` | Référentiel technologies |
-| `/raw` | Éditeur JSON brut (les 3 fichiers, avec validation et téléchargement) |
+| `/profile` | Name, role, contacts |
+| `/missions` | Freelance missions / projects |
+| `/employment` | Work experience |
+| `/education` | Education |
+| `/events` | Talks, certifications, conferences |
+| `/companies` | Companies reference list |
+| `/technologies` | Technologies reference list |
+| `/raw` | Raw JSON editor (all 3 files, with validation and download) |
 
-Les pages CRUD = tableau + formulaire dans un Drawer latéral.
-
----
-
-## CDN d'images
-
-Les icônes sont servies directement par l'API Fastify :
-
-```
-GET  /icons/{folder}/{fichier.png}       ← sert l'image
-GET  /api/images                         ← liste toutes les images
-POST /api/upload?folder={dossier}        ← upload multipart (max 10 Mo)
-```
-
-Dossiers disponibles : `companies`, `technologies`, `misc`.
-
-Les champs "Icône" dans les formulaires utilisent le composant **ImagePicker** :
-une miniature inline + modal avec upload glisser-déposer et grille de sélection.
-La valeur stockée en JSON est un path relatif `/icons/companies/aylabs.png`
-(pas de host hardcodé, fonctionne en dev et en prod).
+CRUD pages = table + form in a side Drawer.
 
 ---
 
-## Structure des données JSON
+## Image CDN
+
+Icons are served directly by the Fastify API:
+
+```
+GET  /icons/{folder}/{file.png}          ← serves the image
+GET  /api/images                         ← lists all images
+POST /api/upload?folder={folder}         ← multipart upload (max 10 MB)
+```
+
+Available folders: `companies`, `technologies`, `misc`.
+
+"Icon" fields in forms use the **ImagePicker** component:
+an inline thumbnail + modal with drag-and-drop upload and a selection grid.
+The value stored in JSON is a relative path `/icons/companies/aylabs.png`
+(no hardcoded host, works in both dev and prod).
+
+---
+
+## JSON data structure
 
 ### `profile.json`
 ```json
@@ -175,56 +175,63 @@ La valeur stockée en JSON est un path relatif `/icons/companies/aylabs.png`
 
 ---
 
-## Routes API
+## API routes
 
-### Profil
-| Méthode | Route | Description |
-|---------|-------|-------------|
-| GET | `/api/profile` | Profil complet |
-| GET / PUT | `/api/profile/bio` | Nom, rôle, contacts |
-| GET / POST | `/api/profile/missions` | Liste / ajout mission |
-| GET / PUT / DELETE | `/api/profile/missions/:index` | Mission par index |
-| GET / POST | `/api/profile/employment` | Liste / ajout emploi |
-| GET / PUT / DELETE | `/api/profile/employment/:index` | Emploi par index |
-| GET / POST | `/api/profile/education` | Liste / ajout formation |
-| GET / PUT / DELETE | `/api/profile/education/:index` | Formation par index |
-| GET / POST | `/api/profile/events` | Liste / ajout évènement |
-| GET / PUT / DELETE | `/api/profile/events/:index` | Évènement par index |
+### Profile
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/profile` | Full profile |
+| GET / PUT | `/api/profile/bio` | Name, role, contacts |
+| GET / POST | `/api/profile/missions` | List / add mission |
+| GET / PUT / DELETE | `/api/profile/missions/:index` | Mission by index |
+| GET / POST | `/api/profile/employment` | List / add employment |
+| GET / PUT / DELETE | `/api/profile/employment/:index` | Employment by index |
+| GET / POST | `/api/profile/education` | List / add education |
+| GET / PUT / DELETE | `/api/profile/education/:index` | Education by index |
+| GET / POST | `/api/profile/events` | List / add event |
+| GET / PUT / DELETE | `/api/profile/events/:index` | Event by index |
 
-### Référentiels
-| Méthode | Route | Description |
-|---------|-------|-------------|
-| GET / POST | `/api/companies` | Liste / ajout entreprise |
-| GET / PUT / DELETE | `/api/companies/:index` | Entreprise par index |
-| GET / POST | `/api/technologies` | Liste / ajout technologie |
-| GET / PUT / DELETE | `/api/technologies/:index` | Technologie par index |
+### Reference lists
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET / POST | `/api/companies` | List / add company |
+| GET / PUT / DELETE | `/api/companies/:index` | Company by index |
+| GET / POST | `/api/technologies` | List / add technology |
+| GET / PUT / DELETE | `/api/technologies/:index` | Technology by index |
 
 ### Images
-| Méthode | Route | Description |
-|---------|-------|-------------|
-| GET | `/api/images` | Liste toutes les images |
-| POST | `/api/upload?folder=xxx` | Upload une image (multipart, max 10 Mo) |
-| GET | `/icons/{folder}/{fichier}` | Sert l'image (CDN statique) |
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/images` | List all images |
+| POST | `/api/upload?folder=xxx` | Upload an image (multipart, max 10 MB) |
+| GET | `/icons/{folder}/{file}` | Serve the image (static CDN) |
 
-### JSON brut
-| Méthode | Route | Description |
-|---------|-------|-------------|
-| GET | `/api/raw/{profile\|companies\|technologies}` | Retourne le fichier JSON tel quel |
-| PUT | `/api/raw/{profile\|companies\|technologies}` | Écrase le fichier JSON (auth requise) |
+### Raw JSON
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/raw/{profile\|companies\|technologies}` | Returns the JSON file as-is |
+| PUT | `/api/raw/{profile\|companies\|technologies}` | Overwrites the JSON file (auth required) |
 
-### Divers
-| Méthode | Route | Description |
-|---------|-------|-------------|
-| GET | `/api/youtube-stats` | Proxy vers `aylabs.fr/youtube-stats.json` |
+### Misc
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/youtube-stats` | Proxy to `aylabs.fr/youtube-stats.json` |
 
 ---
 
-## Authentification
+## Authentication
 
-Les routes d'écriture (POST / PUT / DELETE) sont protégées par un secret partagé.
+Write routes (POST / PUT / DELETE) are protected by a shared secret.
 
-**API** : vérifie le header `X-Admin-Secret: <API_SECRET>` sur toutes les requêtes non-GET.
+**API**: checks the `X-Admin-Secret: <API_SECRET>` header on all non-GET requests.
 
-**Admin** : le client axios (`src/api/client.js`) injecte automatiquement ce header via un intercepteur, à partir de la variable d'environnement `VITE_ADMIN_SECRET`.
+**Admin**: the axios client (`src/api/client.js`) automatically injects this header via an interceptor, from the `VITE_ADMIN_SECRET` environment variable.
 
-En dev local sans `API_SECRET` défini, la protection est désactivée côté API.
+In local dev without `API_SECRET` set, protection is disabled on the API side.
+
+---
+
+## License
+
+This project is licensed under the [Portfolio Manager License](./LICENSE).
+Free to use and modify — resale is prohibited.
