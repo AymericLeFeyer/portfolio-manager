@@ -49,7 +49,9 @@
       "end_date": "2023-07",
       "row": 1,
       "responsibilities": [
-        "Développement d'une application mobile"
+        "Développement d'applications mobiles, de sites vitrines ou de petits projets",
+        "Prospection, chiffrage et création de specs",
+        "Profil disponible sur Fiverr"
       ]
     },
     {
@@ -425,21 +427,6 @@
           "name": "Kotlin",
           "frequency": 0.2,
           "comments": "Le language principal pour le développement de l'application mobile. Je continue à faire du Kotlin pour les nouvelles fonctionnalités et la maintenance de l'application mobile."
-        },
-        {
-          "name": "Compose",
-          "frequency": 0.2,
-          "comments": "Le framework UI utilisé pour construire l'interface utilisateur de l'application mobile."
-        },
-        {
-          "name": "Koin",
-          "frequency": 0.2,
-          "comments": "Utilisé pour la gestion de l'injection de dépendances dans l'application."
-        },
-        {
-          "name": "Ktor",
-          "frequency": 0.2,
-          "comments": "Utilisé pour les communications réseau et les appels API."
         },
         {
           "name": "Git",
@@ -898,15 +885,11 @@
       "is_side_project": false
     },
     {
-      "title": "habidom.fr",
+      "title": "Création d'un site vitrine",
       "context": "Habidom est une entreprise du nord de la France spécialisée dans l'alarme, la domotique et la vidéosurveillance. J'ai créé un site web pour présenter l'entreprise, ses services, l'équipe et une FAQ. Un formulaire permet aux visiteurs d'entrer en contact avec Habidom.",
       "company": "Habidom",
       "start_date": "2020-07",
       "end_date": "2020-07",
-      "link": {
-        "url": "https://www.habidom.fr/",
-        "text": "Site web"
-      },
       "row": 1,
       "is_side_project": false,
       "technologies": [
@@ -930,7 +913,11 @@
         "Conception de maquettes",
         "Développement du site web",
         "Hébergement du site web et configuration du nom de domaine"
-      ]
+      ],
+      "link": {
+        "url": "https://www.habidom.fr/",
+        "text": "Site web"
+      }
     },
     {
       "title": "Développeur Flutter",
@@ -1042,17 +1029,13 @@
       ]
     },
     {
-      "title": "caroline-optique.fr",
+      "title": "Création d'un site vitrine",
       "context": "Caroline Optique est une boutique de lunettes basée à Wormhout, une petite ville du nord de la France. J'ai créé un site web pour présenter l'entreprise, ses services et l'équipe. Un formulaire permet aux visiteurs d'entrer en contact avec Caroline Optique.",
       "company": "Caroline Optique",
       "start_date": "2022-01",
-      "is_side_project": false,
       "end_date": "2022-01",
-      "link": {
-        "url": "https://www.caroline-optique.fr/",
-        "text": "Site web"
-      },
       "row": 1,
+      "is_side_project": false,
       "technologies": [
         {
           "name": "HTML",
@@ -1078,7 +1061,11 @@
       "tasks": [
         "Création du site web",
         "Création des maquettes"
-      ]
+      ],
+      "link": {
+        "url": "https://www.caroline-optique.fr/",
+        "text": "Site web"
+      }
     }
   ],
   "events": [
