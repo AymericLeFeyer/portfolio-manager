@@ -1125,5 +1125,25 @@
       "type": "certification",
       "icon": "/icons/technologies/azure.png"
     }
+  ],
+  "testimonials": [
+    {
+      "name": "Albus Dumbledore",
+      "role": "CEO",
+      "company": "Poudlard",
+      "message": "Rarement vu quelqu'un s'intégrer aussi vite dans une équipe produit. Aymeric pose les bonnes questions, challenge les specs et livre des features solides. Un vrai partenaire."
+    },
+    {
+      "name": "Peter Parker",
+      "role": "Tech Lead",
+      "company": "Daily Bugle",
+      "message": "Aymeric a une vraie capacité à comprendre les enjeux métier avant de toucher au code. Le résultat était propre, bien architecturé et livré dans les délais. Je le recommande sans hésiter."
+    },
+    {
+      "name": "Peach",
+      "role": "Princesse",
+      "company": "Royaume Champignon",
+      "message": "Aymeric a développé notre site vitrine de A à Z en un temps record. Moderne, rapide, et exactement ce qu'on voulait. Il a su traduire notre vision sans qu'on ait à tout expliquer."
+    }
   ]
 }
