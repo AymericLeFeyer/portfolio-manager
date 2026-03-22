@@ -8,6 +8,7 @@ import {
   ShopOutlined,
   CodeOutlined,
   FileTextOutlined,
+  MessageOutlined,
 } from '@ant-design/icons'
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ const menuItems = [
   { key: '/employment', icon: <BankOutlined />, label: 'Emploi' },
   { key: '/education', icon: <BookOutlined />, label: 'Formation' },
   { key: '/events', icon: <CalendarOutlined />, label: 'Évènements' },
+  { key: '/testimonials', icon: <MessageOutlined />, label: 'Témoignages' },
   { key: '/companies', icon: <ShopOutlined />, label: 'Entreprises' },
   { key: '/technologies', icon: <CodeOutlined />, label: 'Technologies' },
   { key: '/raw', icon: <FileTextOutlined />, label: 'JSON brut' },

@@ -8,6 +8,7 @@ import Events from './pages/Events/index.jsx'
 import Companies from './pages/Companies/index.jsx'
 import Technologies from './pages/Technologies/index.jsx'
 import RawEditor from './pages/RawEditor/index.jsx'
+import Testimonials from './pages/Testimonials/index.jsx'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="employment" element={<Employment />} />
           <Route path="education" element={<Education />} />
           <Route path="events" element={<Events />} />
+          <Route path="testimonials" element={<Testimonials />} />
           <Route path="companies" element={<Companies />} />
           <Route path="technologies" element={<Technologies />} />
           <Route path="raw" element={<RawEditor />} />

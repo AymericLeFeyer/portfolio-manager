@@ -217,4 +217,50 @@ export default async function profileRoutes(fastify) {
     await writeProfile(profile)
     reply.code(204).send()
   })
+
+  // Testimonials
+  fastify.get('/profile/testimonials', async () => {
+    const profile = await readProfile()
+    return profile.testimonials || []
+  })
+
+  fastify.post('/profile/testimonials', async (request, reply) => {
+    const profile = await readProfile()
+    if (!profile.testimonials) profile.testimonials = []
+    profile.testimonials.push(request.body)
+    await writeProfile(profile)
+    reply.code(201)
+    return profile.testimonials[profile.testimonials.length - 1]
+  })
+
+  fastify.get('/profile/testimonials/:index', async (request, reply) => {
+    const profile = await readProfile()
+    const idx = parseInt(request.params.index)
+    if (!profile.testimonials || idx < 0 || idx >= profile.testimonials.length) {
+      return reply.code(404).send({ error: 'Not found' })
+    }
+    return profile.testimonials[idx]
+  })
+
+  fastify.put('/profile/testimonials/:index', async (request, reply) => {
+    const profile = await readProfile()
+    const idx = parseInt(request.params.index)
+    if (!profile.testimonials || idx < 0 || idx >= profile.testimonials.length) {
+      return reply.code(404).send({ error: 'Not found' })
+    }
+    profile.testimonials[idx] = request.body
+    await writeProfile(profile)
+    return profile.testimonials[idx]
+  })
+
+  fastify.delete('/profile/testimonials/:index', async (request, reply) => {
+    const profile = await readProfile()
+    const idx = parseInt(request.params.index)
+    if (!profile.testimonials || idx < 0 || idx >= profile.testimonials.length) {
+      return reply.code(404).send({ error: 'Not found' })
+    }
+    profile.testimonials.splice(idx, 1)
+    await writeProfile(profile)
+    reply.code(204).send()
+  })
 }
