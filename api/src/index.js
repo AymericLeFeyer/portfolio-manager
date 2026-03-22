@@ -25,6 +25,8 @@ await fastify.register(cors, { origin: {
       'https://www.aymeric.lefeyer.fr',
       'https://timelife.aymeric.lefeyer.fr',
       'https://www.timelife.aymeric.lefeyer.fr',
+      'https://cv.aymeric.lefeyer.fr',
+      'https://www.cv.aymeric.lefeyer.fr',
       'https://ayphone.aymeric.lefeyer.fr',
       'https://www.ayphone.aymeric.lefeyer.fr',
       'http://localhost:3000',
