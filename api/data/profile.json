@@ -1128,22 +1128,10 @@
   ],
   "testimonials": [
     {
-      "name": "Albus Dumbledore",
-      "role": "CEO",
-      "company": "Poudlard",
-      "message": "Rarement vu quelqu'un s'intégrer aussi vite dans une équipe produit. Aymeric pose les bonnes questions, challenge les specs et livre des features solides. Un vrai partenaire."
-    },
-    {
-      "name": "Peter Parker",
+      "name": "Nabil EL MIDAOUI",
       "role": "Tech Lead",
-      "company": "Daily Bugle",
-      "message": "Aymeric a une vraie capacité à comprendre les enjeux métier avant de toucher au code. Le résultat était propre, bien architecturé et livré dans les délais. Je le recommande sans hésiter."
-    },
-    {
-      "name": "Peach",
-      "role": "Princesse",
-      "company": "Royaume Champignon",
-      "message": "Aymeric a développé notre site vitrine de A à Z en un temps record. Moderne, rapide, et exactement ce qu'on voulait. Il a su traduire notre vision sans qu'on ait à tout expliquer."
+      "company": "Decathlon",
+      "message": "J'ai eu le plaisir de travailler au quotidien avec Aymeric pendant 4 ans. Durant cette période, ses réalisations ont systématiquement dépassé mes attentes. Aymeric est bien plus qu'un simple développeur : c'est un véritable profil Full Stack doté d'une excellente vision globale. Il assimile les nouvelles technologies avec une rapidité impressionnante et n'hésite jamais à sortir de son périmètre technique pour apporter un avis pertinent ou remettre en question l'existant. Extrêmement productif sur la phase de création, il a également maîtrisé à toute vitesse les enjeux critiques de production (le RUN). À l'aube de l'ère de l'IA, sa grande capacité d'adaptation et sa force de proposition sont des atouts inestimables. Je n'ai aucun doute quant à la réussite de sa carrière. Ce fut un réel privilège de l'accompagner, et j'espère sincèrement que nous aurons l'occasion de retravailler ensemble très vite !"
     }
   ]
 }
