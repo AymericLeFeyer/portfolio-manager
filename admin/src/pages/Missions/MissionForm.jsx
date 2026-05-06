@@ -4,6 +4,7 @@ import {
 } from 'antd'
 import { PlusOutlined, MinusCircleOutlined } from '@ant-design/icons'
 import client from '../../api/client.js'
+import MultiImagePicker from '../../components/MultiImagePicker.jsx'
 
 const { Title } = Typography
 
@@ -17,6 +18,7 @@ export default function MissionForm({ open, onClose, onSaved, editIndex, initial
           ...initialData,
           link_url: initialData.link?.url,
           link_text: initialData.link?.text,
+          images: initialData.images || [],
         })
       } else {
         form.resetFields()
@@ -39,6 +41,7 @@ export default function MissionForm({ open, onClose, onSaved, editIndex, initial
         comments: t.comments || '',
       })),
       tasks: (values.tasks || []).filter(Boolean),
+      images: values.images || [],
     }
     if (values.link_url) {
       payload.link = { url: values.link_url, text: values.link_text || '' }
@@ -130,6 +133,11 @@ export default function MissionForm({ open, onClose, onSaved, editIndex, initial
             </>
           )}
         </Form.List>
+
+        <Divider>Images</Divider>
+        <Form.Item name="images">
+          <MultiImagePicker folder="missions" />
+        </Form.Item>
 
         <Divider>Tâches</Divider>
         <Form.List name="tasks">

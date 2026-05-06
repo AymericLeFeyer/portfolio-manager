@@ -21,17 +21,18 @@ export default async function profileRoutes(fastify) {
   // Bio (name, role, contacts)
   fastify.get('/profile/bio', async () => {
     const profile = await readProfile()
-    return { name: profile.name, role: profile.role, contacts: profile.contacts }
+    return { name: profile.name, role: profile.role, contacts: profile.contacts, availability: profile.availability || 'available' }
   })
 
   fastify.put('/profile/bio', async (request) => {
     const profile = await readProfile()
-    const { name, role, contacts } = request.body
+    const { name, role, contacts, availability } = request.body
     if (name !== undefined) profile.name = name
     if (role !== undefined) profile.role = role
     if (contacts !== undefined) profile.contacts = contacts
+    if (availability !== undefined) profile.availability = availability
     await writeProfile(profile)
-    return { name: profile.name, role: profile.role, contacts: profile.contacts }
+    return { name: profile.name, role: profile.role, contacts: profile.contacts, availability: profile.availability || 'available' }
   })
 
   // Missions

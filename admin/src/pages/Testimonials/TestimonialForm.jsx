@@ -52,6 +52,9 @@ export default function TestimonialForm({ open, onClose, onSaved, editIndex, ini
         <Form.Item name="message" label="Message" rules={[{ required: true }]}>
           <Input.TextArea rows={5} />
         </Form.Item>
+        <Form.Item name="link" label="Lien du profil (optionnel)">
+          <Input placeholder="https://linkedin.com/in/..." />
+        </Form.Item>
       </Form>
     </Drawer>
   )

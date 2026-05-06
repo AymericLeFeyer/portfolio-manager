@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Form, Input, Button, Typography, message, Card, Space } from 'antd'
+import { Form, Input, Button, Typography, message, Card, Space, Select } from 'antd'
 import client from '../../api/client.js'
 
 const { Title } = Typography
@@ -10,10 +10,11 @@ export default function ProfileInfo() {
 
   useEffect(() => {
     client.get('/profile/bio').then(res => {
-      const { name, role, contacts } = res.data
+      const { name, role, contacts, availability } = res.data
       form.setFieldsValue({
         name,
         role,
+        availability: availability || 'available',
         email: contacts?.email,
         phone: contacts?.phone,
         linkedin: contacts?.linkedin,
@@ -28,6 +29,7 @@ export default function ProfileInfo() {
       await client.put('/profile/bio', {
         name: values.name,
         role: values.role,
+        availability: values.availability,
         contacts: {
           email: values.email,
           phone: values.phone,
@@ -53,6 +55,13 @@ export default function ProfileInfo() {
           </Form.Item>
           <Form.Item name="role" label="Rôle" rules={[{ required: true }]}>
             <Input />
+          </Form.Item>
+          <Form.Item name="availability" label="Disponibilité" rules={[{ required: true }]}>
+            <Select options={[
+              { value: 'available', label: 'Disponible' },
+              { value: 'soon', label: 'Bientôt disponible' },
+              { value: 'unavailable', label: 'Non disponible' },
+            ]} />
           </Form.Item>
           <Title level={4}>Contacts</Title>
           <Form.Item name="email" label="Email">
