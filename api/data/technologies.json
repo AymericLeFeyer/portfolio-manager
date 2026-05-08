@@ -243,5 +243,10 @@
     "name": "Neo4j",
     "icon": "/icons/technologies/neo4j.png",
     "category": "Database"
+  },
+  {
+    "name": "Fastify",
+    "category": "Framework",
+    "icon": "/icons/technologies/fastify-logo-4FA5E177B6-seeklogo.com-1755913430.png"
   }
 ]

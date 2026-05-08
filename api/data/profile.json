@@ -149,10 +149,7 @@
       "start_date": "2026-02",
       "end_date": "2026-02",
       "row": 1,
-      "link": {
-        "url": "https://aymeric.lefeyer.fr/",
-        "text": "Site web"
-      },
+      "is_side_project": true,
       "technologies": [
         {
           "name": "Kotlin Multiplatform",
@@ -176,7 +173,18 @@
         "Plein de prompts",
         "Déploiement du site sur Firebase"
       ],
-      "is_side_project": true
+      "images": [
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.03.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.10.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.18.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.35.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.43.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.21.57.png"
+      ],
+      "link": {
+        "url": "https://ayphone.aymeric.lefeyer.fr/",
+        "text": "Site web"
+      }
     },
     {
       "title": "Time Life",
@@ -185,10 +193,7 @@
       "start_date": "2026-01",
       "end_date": "2026-01",
       "row": 1,
-      "link": {
-        "url": "https://timelife.aymeric.lefeyer.fr/",
-        "text": "Site web"
-      },
+      "is_side_project": true,
       "technologies": [
         {
           "name": "React",
@@ -205,7 +210,15 @@
         "Plein de prompts",
         "Déploiement du site sur Firebase"
       ],
-      "is_side_project": true
+      "images": [
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.22.31.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.22.39.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.22.51.png"
+      ],
+      "link": {
+        "url": "https://timelife.aymeric.lefeyer.fr/",
+        "text": "Site web"
+      }
     },
     {
       "title": "Baraque",
@@ -325,6 +338,11 @@
         "Rédaction de documentations",
         "Déploiement du site"
       ],
+      "images": [
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.24.05.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.24.14.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.24.33.png"
+      ],
       "link": {
         "url": "https://docs.aylabs.fr/",
         "text": "Site web"
@@ -396,17 +414,31 @@
         }
       ],
       "tasks": [
-        "Migration de toute l’application en Kotlin avec Compose, koin et ktor",
-        "Conception de nouveaux écrans et intégration UI/UX",
-        "Mise en place de l’architecture technique",
+        "Migration de toute l'application mobile de Flutter vers Kotlin avec Jetpack Compose",
+        "Standardisation de l'injection de dépendances avec Koin pour une gestion robuste des cycles de vie des composants.",
+        "Conception de nouveaux écrans sur Figma et intégration compose",
+        "Mise en place de l'architecture technique (MVVM / Clean Architecture) multi-modules pour renforcer l'isolation des fonctionnalités",
+        "Intégration d'évènements anayltics personnalisés pour Amplitude / Google Analytics et mise en place de dashboards (Screen views, events customs)",
+        "Gestion de l'asynchronisme et des flux de données réactifs avec Kotlin Coroutines et Flow, garantissant une UI non-bloquante.",
+        "Optimisation de la persistance d'état via SavedStateHandle et Parcelize pour garantir la continuité utilisateur après interruption système (Process Death)",
+        "Optimisation des performances au runtime et réduction de l'empreinte de l'APK via l'implémentation des règles de shrinking et d'offuscation R8.",
+        "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code (Tzatziki)",
         "Participation au roulement de l'astreinte backend pour réparer le produit en cas d'incident",
-        "Intégration d'évènements anayltics personnalisés pour Amplitude / Google Analytics",
-        "Validation auprès des pairs",
-        "Chiffrage / estimation de features",
-        "Veille technologique sur le monde Android",
-        "Documentation, et formations envers mes collègues",
-        "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code",
+        "Validation du code auprès des pairs",
+        "Chiffrage / estimation du temps et de la complexité des features",
+        "Mise en place d'un outil de veille technologique pour l'équipe",
+        "Mise en place d'un monitoring d'erreurs et de performance via Firebase Crashlytics pour une résolution proactive des régressions.",
+        "Documentation technique et fonctionnelle, formations Android envers mes collègues",
         "Présentation de fonctionnalités lors de démos aux parties prenantes"
+      ],
+      "images": [
+        "/icons/missions/Screenshot_20260507_143427.png",
+        "/icons/missions/Screenshot_20260507_143459.png",
+        "/icons/missions/Screenshot_20260507_143510.png",
+        "/icons/missions/Screenshot_20260507_143531.png",
+        "/icons/missions/Screenshot_20260507_143552.png",
+        "/icons/missions/Screenshot_20260507_143649.png",
+        "/icons/missions/Screenshot_20260507_143713.png"
       ]
     },
     {
@@ -464,6 +496,13 @@
         "Déploiement",
         "Conception et architecture",
         "Maintenance de l'application mobile"
+      ],
+      "images": [
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.16.24.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.16.32.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.16.50.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.17.09.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.17.21.png"
       ]
     },
     {
@@ -528,6 +567,12 @@
         "Recherche UI/UX et intégration",
         "Amélioration du workflow de déploiement Bitrise",
         "Développement de nombreuses fonctionnalités (écran de maintenance, bandeaux d’informations, mise à jour automatique, etc.)"
+      ],
+      "images": [
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.18.22.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.18.29.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.18.40.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.19.34.png"
       ]
     },
     {
@@ -1066,6 +1111,113 @@
         "url": "https://www.caroline-optique.fr/",
         "text": "Site web"
       }
+    },
+    {
+      "title": "Portfolio Manager",
+      "context": "J'en avais marre de recopier toutes mes missions / expériences à chaque nouveau portfolio, et quand il fallait en rajouter une, je ne savais jamais comment marchait la CI/CD de mon site. Pour répondre à cette problématique, j'ai créé un portfolio manager, qui est connecté à tous mes portfolios pour des datas toujours fraîches et dynamiques",
+      "company": "Perso",
+      "start_date": "2026-02",
+      "end_date": "2026-03",
+      "row": 1,
+      "is_side_project": true,
+      "technologies": [
+        {
+          "name": "Fastify",
+          "frequency": 1,
+          "comments": ""
+        },
+        {
+          "name": "Claude Code",
+          "frequency": 1,
+          "comments": ""
+        },
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": ""
+        }
+      ],
+      "tasks": [],
+      "images": [
+        "/icons/missions/pm1.png",
+        "/icons/missions/pm2.png",
+        "/icons/missions/pm3.png"
+      ],
+      "link": {
+        "url": "https://github.com/AymericLeFeyer/portfolio-manager",
+        "text": "Github"
+      }
+    },
+    {
+      "title": "Développement d'un connecteur pour Mealie",
+      "context": "Mealie c'est un outil open source pour gérer ses menus, mais le frontend est vraiment moche, alors je l'ai refait entièrement. \nBonap est également open source, et c'est la première fois que je dois maintenir un projet, avec des issues et des pull requests.",
+      "company": "Bonap",
+      "start_date": "2026-03",
+      "end_date": "2026-05",
+      "row": 1,
+      "is_side_project": true,
+      "technologies": [
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": ""
+        },
+        {
+          "name": "Claude Code",
+          "frequency": 1,
+          "comments": ""
+        }
+      ],
+      "tasks": [
+        "Création du projet",
+        "Maintenance",
+        "Relecture des PR",
+        "Acceptation (ou non) des issues",
+        "Gestion d'un projet open source",
+        "Vidéo YouTube "
+      ],
+      "images": [
+        "/icons/missions/b1.png",
+        "/icons/missions/Capture d'écran 2026-05-06 210922.png",
+        "/icons/missions/Capture d'écran 2026-05-06 210917.png",
+        "/icons/missions/Capture d'écran 2026-05-06 210907.png"
+      ],
+      "link": {
+        "url": "https://bonap.aylabs.fr/",
+        "text": "bonap.fr"
+      }
+    },
+    {
+      "title": "Dofus Progress",
+      "context": "Dofus c'est un jeu dans lequel on doit faire des quêtes, et ces quêtes parfois on peut être bloqué, ou avoir besoin de certaines choses. J'ai créé Dofus Progress, un petit outil qui me permet à mes amis et moi de nous synchroniser sur nos quêtes en cours, et savoir quoi faire quand on se connecte.",
+      "company": "Perso",
+      "start_date": "2026-04",
+      "end_date": "2026-04",
+      "row": 1,
+      "is_side_project": true,
+      "technologies": [
+        {
+          "name": "Claude Code",
+          "frequency": 1,
+          "comments": ""
+        },
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": ""
+        }
+      ],
+      "tasks": [],
+      "images": [
+        "/icons/missions/Capture d'écran 2026-05-06 211652.png",
+        "/icons/missions/Capture d'écran 2026-05-06 211704.png",
+        "/icons/missions/Capture d'écran 2026-05-06 211709.png",
+        "/icons/missions/Capture d'écran 2026-05-06 211745.png"
+      ],
+      "link": {
+        "url": "https://github.com/AymericLeFeyer/dofus-progress",
+        "text": "Github"
+      }
     }
   ],
   "events": [
@@ -1131,7 +1283,9 @@
       "name": "Nabil EL MIDAOUI",
       "role": "Tech Lead",
       "company": "Decathlon",
-      "message": "J'ai eu le plaisir de travailler au quotidien avec Aymeric pendant 4 ans. Durant cette période, ses réalisations ont systématiquement dépassé mes attentes. Aymeric est bien plus qu'un simple développeur : c'est un véritable profil Full Stack doté d'une excellente vision globale. Il assimile les nouvelles technologies avec une rapidité impressionnante et n'hésite jamais à sortir de son périmètre technique pour apporter un avis pertinent ou remettre en question l'existant. Extrêmement productif sur la phase de création, il a également maîtrisé à toute vitesse les enjeux critiques de production (le RUN). À l'aube de l'ère de l'IA, sa grande capacité d'adaptation et sa force de proposition sont des atouts inestimables. Je n'ai aucun doute quant à la réussite de sa carrière. Ce fut un réel privilège de l'accompagner, et j'espère sincèrement que nous aurons l'occasion de retravailler ensemble très vite !"
+      "message": "J'ai eu le plaisir de travailler au quotidien avec Aymeric pendant 4 ans. Durant cette période, ses réalisations ont systématiquement dépassé mes attentes. Aymeric est bien plus qu'un simple développeur : c'est un véritable profil Full Stack doté d'une excellente vision globale. Il assimile les nouvelles technologies avec une rapidité impressionnante et n'hésite jamais à sortir de son périmètre technique pour apporter un avis pertinent ou remettre en question l'existant. Extrêmement productif sur la phase de création, il a également maîtrisé à toute vitesse les enjeux critiques de production (le RUN). À l'aube de l'ère de l'IA, sa grande capacité d'adaptation et sa force de proposition sont des atouts inestimables. Je n'ai aucun doute quant à la réussite de sa carrière. Ce fut un réel privilège de l'accompagner, et j'espère sincèrement que nous aurons l'occasion de retravailler ensemble très vite !",
+      "link": ""
     }
-  ]
+  ],
+  "availability": "available"
 }
