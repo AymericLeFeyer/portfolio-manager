@@ -349,11 +349,11 @@
       }
     },
     {
-      "title": "Développeur d'application mobile Kotlin",
-      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. La seconde partie de ma mission consiste à la migration de Flutter vers Kotlin / Compose.",
+      "title": "Développeur fullstack mobile et web",
+      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. \nCette mission s'est déroulée en 3 grandes étapes : \n- Développement et maintenance de l'application Flutter\n- Migration de l'application en Kotlin\n- Développement d'une application web React",
       "company": "Decathlon",
-      "start_date": "2024-05",
-      "end_date": "2026-02",
+      "start_date": "2022-06",
+      "end_date": "2026-06",
       "row": 2,
       "is_side_project": false,
       "technologies": [
@@ -411,6 +411,21 @@
           "name": "Tzatziki",
           "frequency": 0.1,
           "comments": "Utilisé pour les tests d'intégration end-to-end de l'application mobile."
+        },
+        {
+          "name": "React",
+          "frequency": 0.4,
+          "comments": "Application web"
+        },
+        {
+          "name": "Flutter",
+          "frequency": 1,
+          "comments": "Application mobile legacy"
+        },
+        {
+          "name": "Bitrise",
+          "frequency": 0.3,
+          "comments": "Outil de CI/CD pensé pour le mobile"
         }
       ],
       "tasks": [
@@ -422,14 +437,22 @@
         "Gestion de l'asynchronisme et des flux de données réactifs avec Kotlin Coroutines et Flow, garantissant une UI non-bloquante.",
         "Optimisation de la persistance d'état via SavedStateHandle et Parcelize pour garantir la continuité utilisateur après interruption système (Process Death)",
         "Optimisation des performances au runtime et réduction de l'empreinte de l'APK via l'implémentation des règles de shrinking et d'offuscation R8.",
-        "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code (Tzatziki)",
+        "Mise en place de tests d'intégration end-to-end pour assurer la qualité du code (Espresso, Tzatziki, Guerkin))",
         "Participation au roulement de l'astreinte backend pour réparer le produit en cas d'incident",
         "Validation du code auprès des pairs",
         "Chiffrage / estimation du temps et de la complexité des features",
         "Mise en place d'un outil de veille technologique pour l'équipe",
         "Mise en place d'un monitoring d'erreurs et de performance via Firebase Crashlytics pour une résolution proactive des régressions.",
         "Documentation technique et fonctionnelle, formations Android envers mes collègues",
-        "Présentation de fonctionnalités lors de démos aux parties prenantes"
+        "Présentation de fonctionnalités lors de démos aux parties prenantes",
+        "Mise en place de Firebase (Remote Config, Crashlytics)",
+        "Refonte graphique pour s’adapter au design system “Vitamin”",
+        "Recherche UI/UX et intégration Flutter",
+        "Amélioration du workflow de déploiement Bitrise",
+        "Développement de nombreuses fonctionnalités (écran de maintenance, bandeaux d’informations, mise à jour automatique, etc.)",
+        "Migration de l'application web Vue2 en Vue3",
+        "Migration de l'application web Vue3 en React (quelques années plus tard)",
+        "Déploiement de l'application web via Flux.cd, Kubernetes et Docker"
       ],
       "images": [
         "/icons/missions/Screenshot_20260507_143427.png",
@@ -438,140 +461,19 @@
         "/icons/missions/Screenshot_20260507_143531.png",
         "/icons/missions/Screenshot_20260507_143552.png",
         "/icons/missions/Screenshot_20260507_143649.png",
-        "/icons/missions/Screenshot_20260507_143713.png"
-      ]
-    },
-    {
-      "title": "Développeur d'application React",
-      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store' écrite en Kotlin avec Compose. Chaque module de cette application 'all-in-one' est gérée par une équipe. La troisième partie de ma mission consiste à la migration de notre outil de paramétrage de Vue vers React",
-      "company": "Decathlon",
-      "start_date": "2026-02",
-      "end_date": "2026-06",
-      "row": 2,
-      "is_side_project": false,
-      "technologies": [
-        {
-          "name": "React",
-          "frequency": 1,
-          "comments": "Création d'une nouvelle appli de paramétrage en React pour remplacer l'ancienne application en VueJS"
-        },
-        {
-          "name": "Kotlin",
-          "frequency": 0.2,
-          "comments": "Le language principal pour le développement de l'application mobile. Je continue à faire du Kotlin pour les nouvelles fonctionnalités et la maintenance de l'application mobile."
-        },
-        {
-          "name": "Git",
-          "frequency": 1,
-          "comments": "Utilisé pour le contrôle de version et la collaboration avec l'équipe."
-        },
-        {
-          "name": "Github",
-          "frequency": 1,
-          "comments": "Plateforme utilisée pour l'hébergement du code source et la gestion des pull requests."
-        },
-        {
-          "name": "Github Actions",
-          "frequency": 1,
-          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile."
-        },
-        {
-          "name": "Jira",
-          "frequency": 0.5,
-          "comments": "Utilisé pour la gestion des tâches et le suivi des bugs."
-        },
-        {
-          "name": "Kubernetes",
-          "frequency": 0.1,
-          "comments": "Utilisé pour le déploiement et la gestion des services backend, pour donner un coup de main à l'équipe backend et agir en cas d'incident"
-        },
-        {
-          "name": "VueJS",
-          "frequency": 0.2,
-          "comments": "Fonctionnalités ou correctifs sur l'application web de paramétrage de notre application"
-        }
-      ],
-      "tasks": [
-        "Migration de l'application Vue en React",
-        "Déploiement",
-        "Conception et architecture",
-        "Maintenance de l'application mobile"
-      ],
-      "images": [
+        "/icons/missions/Screenshot_20260507_143713.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.11.51.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.12.03.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.12.15.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.12.28.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.16.24.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.16.32.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.16.50.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.17.09.png",
-        "/icons/missions/Capture d’écran 2026-05-07 à 14.17.21.png"
-      ]
-    },
-    {
-      "title": "Développeur d'application mobile Flutter",
-      "context": "BOSS est la solution développée par Decathlon pour toute la gestion du coffre magasin et des caisses au sein de tous les magasins. Elle est utilisée par les vendeurs sportifs et permet d'assurer une cohérence entre l'argent théorique et l'argent réel. Cette application, initialement en Flutter, s'intègre dans une plus grande application 'Cube in Store', application android native. Chaque module de cette application 'all-in-one' est gérée par une équipe.",
-      "company": "Decathlon",
-      "start_date": "2022-06",
-      "end_date": "2024-05",
-      "row": 2,
-      "is_side_project": false,
-      "technologies": [
-        {
-          "name": "Flutter",
-          "frequency": 1,
-          "comments": "Le framework principal pour le développement de l'application mobile."
-        },
-        {
-          "name": "Dart",
-          "frequency": 1,
-          "comments": "Le language utilisé pour développer l'application mobile."
-        },
-        {
-          "name": "Firebase",
-          "frequency": 0.5,
-          "comments": "Crashlytics et Remote config pour la gestion des crashs et la configuration à distance."
-        },
-        {
-          "name": "Git",
-          "frequency": 1,
-          "comments": "Utilisé pour le contrôle de version et la collaboration avec l'équipe."
-        },
-        {
-          "name": "Github",
-          "frequency": 1,
-          "comments": "Plateforme utilisée pour l'hébergement du code source et la gestion des pull requests."
-        },
-        {
-          "name": "Jira",
-          "frequency": 0.5,
-          "comments": "Utilisé pour la gestion des tâches et le suivi des bugs."
-        },
-        {
-          "name": "Guerkin",
-          "frequency": 0.1,
-          "comments": "Utilisé pour écrire des tests d'acceptation afin de garantir que les fonctionnalités répondent aux exigences métier."
-        },
-        {
-          "name": "Bitrise",
-          "frequency": 0.5,
-          "comments": "Utilisé pour l'intégration continue et le déploiement continu (CI/CD) de l'application mobile."
-        },
-        {
-          "name": "VueJS",
-          "frequency": 0.1,
-          "comments": "Fonctionnalités ou correctifs sur l'application web de paramétrage de notre application"
-        }
-      ],
-      "tasks": [
-        "Mise en place de Firebase (Remote Config, Analytics, Crashlytics)",
-        "Amélioration de la qualité du produit avec des tests unitaires et des tests d'intégration",
-        "Refonte graphique pour s’adapter au design system “Vitamin”",
-        "Recherche UI/UX et intégration",
-        "Amélioration du workflow de déploiement Bitrise",
-        "Développement de nombreuses fonctionnalités (écran de maintenance, bandeaux d’informations, mise à jour automatique, etc.)"
-      ],
-      "images": [
         "/icons/missions/Capture d’écran 2026-05-07 à 14.18.22.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.18.29.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.18.40.png",
+        "/icons/missions/Capture d’écran 2026-05-07 à 14.17.21.png",
         "/icons/missions/Capture d’écran 2026-05-07 à 14.19.34.png"
       ]
     },
