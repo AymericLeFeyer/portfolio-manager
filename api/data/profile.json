@@ -1120,6 +1120,56 @@
         "url": "https://github.com/AymericLeFeyer/dofus-progress",
         "text": "Github"
       }
+    },
+    {
+      "title": "Consultant de création de produit",
+      "context": "Loc Event by So est une entreprise de location de matériel événementiel (mariages, anniversaires, séminaires ...). \nDans le cadre de la création de l'activité, je suis intervenu dans \n- l'accompagnement à la création de l'image de marque (logo, site vitrine)\n- l'accompagnement à la configuration d'un SaaS de gestion d'activité dans la location et la vente (booqable)\n- l'accompagnement dans la configuration OVH\n\nAfin de garantir une certaine autonomie, j'ai aussi mis en place un backoffice qui pilote les informations clés du site vitrine",
+      "company": "Loc Event by So",
+      "start_date": "2026-07",
+      "end_date": "2026-08",
+      "row": 2,
+      "is_side_project": false,
+      "technologies": [
+        {
+          "name": "Claude Code",
+          "frequency": 1,
+          "comments": "Site vitrine principalement vibe codé"
+        },
+        {
+          "name": "React",
+          "frequency": 1,
+          "comments": ""
+        },
+        {
+          "name": "Github",
+          "frequency": 0.5,
+          "comments": ""
+        },
+        {
+          "name": "Github Actions",
+          "frequency": 0.5,
+          "comments": ""
+        }
+      ],
+      "tasks": [
+        "Accompagnement sur la création du logo",
+        "Création d'un site vitrine attirant, fonctionnel et dynamique",
+        "Configuration de Booqable",
+        "Création d'un back office rendant la modification du site vitrine plus pratique",
+        "Formation et accompagnement sur la plateforme Booqable",
+        "Mise en place d'une chaîne CI/CD pour déployer le site vitrine automatiquement"
+      ],
+      "images": [
+        "/icons/missions/Capture d'écran 2026-08-10 173026.png",
+        "/icons/missions/Capture d'écran 2026-08-10 173034.png",
+        "/icons/missions/Capture d'écran 2026-08-10 173050.png",
+        "/icons/missions/Capture d'écran 2026-08-10 173137.png",
+        "/icons/missions/Capture d'écran 2026-08-10 173155.png"
+      ],
+      "link": {
+        "url": "https://loc-event.com/",
+        "text": "Site vitrine"
+      }
     }
   ],
   "events": [

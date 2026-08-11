@@ -70,5 +70,9 @@
   {
     "name": "Perso",
     "icon": "/icons/companies/aylabs-compressed.jpg"
+  },
+  {
+    "name": "Loc Event by So",
+    "icon": "/icons/companies/logo.png"
   }
 ]
