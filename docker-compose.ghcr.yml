@@ -1,0 +1,30 @@
+services:
+  api:
+    image: ghcr.io/aymericlefeyer/portfolio-manager-api:${IMAGE_TAG:-latest}
+    ports:
+      - "3001:3001"
+    volumes:
+      - portfolio_data:/app/data
+    environment:
+      - DATA_PATH=/app/data
+      - API_SECRET=${API_SECRET}
+    restart: unless-stopped
+    networks:
+      - portfolio
+
+  admin:
+    image: ghcr.io/aymericlefeyer/portfolio-manager-admin:${IMAGE_TAG:-latest}
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+    networks:
+      - portfolio
+
+networks:
+  portfolio:
+    driver: bridge
+
+volumes:
+  portfolio_data:
